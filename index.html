@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CarbzSOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/carbzsos.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/carbzsos.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/carbzsos.js"></script>
+</head>
+<body>
+
+
+
+
+  <div data-role="page" data-control-title="Home" data-theme="a" id="home">
+      <div data-theme="a" data-role="header">
+          <h3>Measurement</h3>
+      </div>
+      <div data-role="content">
+          
+              <div data-controltype="textblock" class="step-header">
+                  
+                <h2 class="center-text">Select Your Preferred Unit of Measurement:</h2>
+                 
+              </div>
+              <div data-controltype="textblock" class="step-tips">
+                  <p style="text-align: center;">
+                      Please select the method you measure in
+                  </p>
+              </div>
+              <div data-role="fieldcontain" data-controltype="radiobuttons">
+                  <fieldset data-role="controlgroup" data-type="vertical">
+                      <input id="radio2" name="measurement" value="radio2" type="radio">
+                      <label for="radio2">
+                          mmol/L
+                      </label>
+                      <input id="radio1" name="measurement" value="mg/dL" type="radio">
+                      <label for="radio1">
+                          mg/dL
+                      </label>
+                  </fieldset>
+              </div>
+              <a data-role="button" data-transition="slide" data-theme="b" href="#Step1"
+              data-icon="arrow-r" data-iconpos="right">
+                  Begin Calculating
+              </a>
+          
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div data-role="page" data-control-title="Step1" id="Step1">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-direction="reverse" data-transition="slide"
+          href="#home" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>ISF/CF</h3>
+      </div>
+      <div data-role="content" style="padding:  0 15px">
+          <div data-controltype="htmlblock">
+              <div class="progress">
+                  <div class="percent" style="width:20%;">
+                  </div>
+              </div>
+          </div>
+          <div data-controltype="textblock" class="step-header">
+              <h2 data-mce-style="text-align: center;" style="text-align: center;">
+                  Your ISF/CF
+
+              </h2>
+          </div>
+          <div data-controltype="textblock" class="hints">
+              <p style="text-align: center;">
+                  <em>
+                      Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin
+                      will lower your blood sugar.
+                  </em>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput" class="center-input">
+              <input name="" id="textinput2" placeholder="mmol/L" value="" type="number">
+          </div>
+          <a data-role="button" data-transition="slide" data-theme="a" href="#Step2"
+          data-icon="arrow-r" data-iconpos="right">
+              Next Step
+          </a>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div data-role="page" data-control-title="Step2" id="Step2">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-direction="reverse" data-transition="slide"
+          href="#Step1" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>Before Meal Blood Sugar</h3>
+      </div>
+      <div data-role="content" style="padding: 0 15px">
+          <div data-controltype="htmlblock">
+              <div class="progress">
+                  <div class="percent" style="width:40%;">
+                  </div>
+              </div>
+          </div>
+          <div data-controltype="textblock" class="step-header">
+              <h2 data-mce-style="text-align: center;" style="text-align: center;">
+                  Before Meal Blood Sugar
+              </h2>
+          </div>
+          <div data-controltype="textblock" class="step-tips">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  Before meal blood sugar measurement should be taken within 1/2 hour of
+                  your meal.
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput" class="center-input">
+              <input name="" id="textinput3" placeholder="mmol/L" value="" type="number">
+          </div>
+          <a data-role="button" data-transition="slide" data-theme="a" href="#Step3"
+          data-icon="arrow-r" data-iconpos="right">
+              Next Step
+          </a>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div data-role="page" data-control-title="Step3" id="Step3">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-direction="reverse" data-transition="slide"
+          href="#Step2" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>After meal blood sugar</h3>
+      </div>
+      <div data-role="content" style="padding: 0 15px">
+          <div data-controltype="htmlblock">
+              <div class="progress">
+                  <div class="percent" style="width:60%;">
+                  </div>
+              </div>
+          </div>
+          <div data-controltype="textblock" class="step-header">
+              <h2 data-mce-style="text-align: center;" style="text-align: center;">
+                  After meal blood sugar
+              </h2>
+          </div>
+          <div data-controltype="textblock" class="step-tips">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span>
+                      Before meal blood sugar measurement should be taken within 1/2 hour of
+                      your meal.
+                  </span>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput" class="center-input">
+              <input name="" id="textinput4" placeholder="mmol/L" value="" type="number">
+          </div>
+          <a data-role="button" data-transition="slide" data-theme="a" href="#step4"
+          data-icon="arrow-r" data-iconpos="right">
+              Next Step
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Step4" id="step4">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-direction="reverse" data-transition="slide"
+          href="#Step3" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>Units of Rapid (mealtime) Insulin</h3>
+      </div>
+      <div data-role="content" style="padding: 0 15px">
+          <div data-controltype="htmlblock">
+              <div class="progress">
+                  <div class="percent" style="width:80%;">
+                  </div>
+              </div>
+          </div>
+          <div data-controltype="textblock" class="step-header">
+              <h2 data-mce-style="text-align: center;" style="text-align: center;">
+                  Units of Rapid (mealtime) Insulin
+              </h2>
+          </div>
+          <div data-controltype="textblock" class="step-tips">
+              <p style="text-align: center;">
+                  <span>
+                      Before meal blood sugar measurement should be taken within 1/2 hour of
+                      your meal.
+                  </span>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput" class="center-input">
+              <input name="" id="textinput5" placeholder="mmol/L" value="" type="number">
+          </div>
+          <a data-role="button" data-transition="slide" data-theme="b" href="#Step5"
+          data-icon="arrow-r" data-iconpos="right">
+              Next Step
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Step5" id="Step5" class="step-header">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-direction="reverse" data-transition="slide"
+          href="#step4" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>Total Grams of Carbohydrates</h3>
+      </div>
+      <div data-role="content" style="padding: 0 15px">
+          <div data-controltype="htmlblock">
+              <div class="progress">
+                  <div class="percent" style="width:100%;">
+                  </div>
+              </div>
+          </div>
+          <div data-controltype="textblock">
+              <h2 data-mce-style="text-align: center;" style="text-align: center;">
+                  Total Grams of Carbohydrates
+              </h2>
+          </div>
+          <div data-controltype="textblock" class="step-tips">
+              <p style="text-align: center;">
+                  <span>
+                      A tip about this should go here
+                  </span>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput" class="center-input">
+              <input name="" id="textinput8" placeholder="in Grams (g)" value="" type="number">
+          </div>
+          <input type="submit" data-theme="b" value="Calculate">
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Results" id="Results">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-transition="flip" href="#home" data-icon="home"
+          data-iconpos="notext" class="ui-btn-right">
+          </a>
+          <a data-role="button" data-direction="reverse" data-transition="slide"
+          href="#Step5" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>Insulin: Carbohydrate Ratio</h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <h2 style="text-align: center;">
+                  Insulin: Carbohydrate Ratio
+              </h2>
+          </div>
+          <div data-controltype="htmlblock" class="rounded green">
+              <span class="result">
+                  1:7
+              </span>
+              <i>
+                  1 unit of Rapid (mealtime) Insulin for every 7 grams of Carbohydrates
+              </i>
+          </div>
+          <a data-role="button" href="#Results">
+              More information
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Help" id="page9">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="#home" data-icon="home" data-iconpos="notext"
+          class="ui-btn-left">
+          </a>
+          <h3>
+              Help
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-role="collapsible-set" class="collapsible">
+              <div data-role="collapsible">
+                  <h3>
+                      Blood Sugar Targets
+                  </h3>
+                  <div class="ui-grid-a">
+                      <div class="ui-block-a">
+                          <div data-controltype="textblock">
+                              <h3>
+                                  <b>
+                                      mmol/L
+                                  </b>
+                              </h3>
+                              <p>
+                                  4mmol - 7mmol
+                                  <br>
+                                  before meals
+                              </p>
+                              <p>
+                                  5mmol - 10mmol
+                                  <br>
+                                  after meals
+                              </p>
+                          </div>
+                      </div>
+                      <div class="ui-block-b">
+                          <div data-controltype="textblock">
+                              <h3>
+                                  <b>
+                                      mg/dL
+                                  </b>
+                              </h3>
+                              <p>
+                                  72 mg - 126 mg
+                                  <br>
+                                  before meals
+                              </p>
+                              <p>
+                                  90 mg - 180 mg
+                                  <br>
+                                  after meals
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Using CarbzSOS Calculator
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          <b>
+                              Before meal blood sugar must be greater than or equal to:
+                          </b>
+                      </p>
+                  </div>
+                  <div class="ui-grid-a">
+                      <div class="ui-block-a">
+                          <div data-controltype="textblock">
+                              <p>
+                                  <strong>
+                                      mmol/L
+                                  </strong>
+                                  <br>
+                                  4 mmol
+                              </p>
+                          </div>
+                      </div>
+                      <div class="ui-block-b">
+                          <div data-controltype="textblock">
+                              <p>
+                                  <b>
+                                      mg/dL
+                                      <br>
+                                  </b>
+                                  <span id="_mce_caret" data-mce-bogus="true" style="">
+                                      ﻿72 mg
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div data-controltype="textblock">
+                      <p>
+                          <b>
+                              After meal blood sugar must be greater than or equal to:
+                          </b>
+                      </p>
+                  </div>
+                  <div class="ui-grid-a">
+                      <div class="ui-block-a">
+                          <div data-controltype="textblock">
+                              <p>
+                                  <b>
+                                      mmol/L
+                                      <br>
+                                  </b>
+                                  <span id="_mce_caret" data-mce-bogus="true" style="">
+                                      5 mmol
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="ui-block-b">
+                          <div data-controltype="textblock">
+                              <p>
+                                  <b>
+                                      mg/dL
+                                      <br>
+                                  </b>
+                                  <span id="_mce_caret" data-mce-bogus="true" style="">
+                                      90 mg
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      ISF = CF
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          <b>
+                              ISF
+                          </b>
+                          <em>
+                              (Insulin sensitivity factor)
+                          </em>
+                          <b>
+                              = CF
+                          </b>
+                          <em>
+                              (Insulin correction factor)
+                          </em>
+                      </p>
+                      <h3>
+                          <em>
+                              What is your ISF or CF?
+                          </em>
+                      </h3>
+                      <p>
+                          Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) insulin
+                          will lower your blood sugar.
+                      </p>
+                      <h3>
+                          Example:
+                      </h3>
+                  </div>
+                  <div class="ui-grid-a">
+                      <div class="ui-block-a">
+                          <div data-controltype="textblock">
+                              <p>
+                                  <b>
+                                      mmol/L
+                                  </b>
+                              </p>
+                              <p>
+                                  <span id="_mce_caret" data-mce-bogus="true" style="">
+                                      ﻿1 unit of Rapid (mealtime) insulin lowers your blood sugar 2 mmol, your
+                                      ISF or Cf is 1:2
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="ui-block-b">
+                          <div data-controltype="textblock">
+                              <p>
+                                  <b>
+                                      mg/dL
+                                  </b>
+                              </p>
+                              <p>
+                                  <span id="_mce_caret" data-mce-bogus="true" style="">
+                                      1 unit of Rapid (mealtime) insulin lowers your blood sugar 2 mmol, your
+                                      ISF or CF is 1:36
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      ISF/CF recommendations
+                  </h3>
+                  <div data-controltype="textblock">
+                      <h2>
+                          <b>
+                              mmol/L
+                          </b>
+                      </h2>
+                      <p>
+                          <strong>
+                              Adult Type 2 (Adult diabetes): 2&nbsp;
+                          </strong>
+                          <br>
+                          This value may require adjusting for some Type 2 individuals.
+                      </p>
+                      <p>
+                          <strong>
+                              Adult Type 1 (Juvenile diabetes): 3 or 4
+                              <br>
+                          </strong>
+                          ﻿This value may require adjusting for some Type 1 individuals.
+                      </p>
+                  </div>
+                  <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+                  <div data-controltype="textblock">
+                      <h2>
+                          <b>
+                              mg/dL
+                          </b>
+                      </h2>
+                      <p>
+                          <b>
+                              Adult Type 2 (Adult diabetes): 36
+                              <br>
+                          </b>
+                          <span id="_mce_caret" data-mce-bogus="true" style="">
+                              This value may require adjusting for some Type 2 individuals.
+                          </span>
+                      </p>
+                      <p>
+                          <b>
+                              <b>
+                                  Juvenile
+                              </b>
+                              &nbsp;Type 1 (Juvenile diabetes): 54 or 72
+                              <br>
+                          </b>
+                          This value may require adjusting for some Type 2 individuals.
+                      </p>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Before meal blood sugar
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          Before meal blood sugar measurement should be taken within 1/2 hour of
+                          your meal.
+                      </p>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      After meal blood sugar
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          Enter content here...
+                      </p>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Rapid (mealtime) insulin
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          Number of units of Rapid (mealtime) insulin given for your meal.
+                      </p>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Total Grams of carbohydrates
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          Total grams of carbohydrates from all sources in your meal (not including
+                          fibre).
+                      </p>
+                      <p>
+                          <strong>
+                              Example:
+                          </strong>
+                      </p>
+                      <p>
+                          Total Carbohydrates = 18 grams
+                          <br>
+                          Fiber = 2 grams
+                          <br>
+                          Sugar = 2 grams
+                          <br>
+                          Starch = 14 grams
+                      </p>
+                      <p>
+                          Therefore:
+                      </p>
+                      <p>
+                          18 grams of carbohydrates&nbsp;- 2 grams of fiber&nbsp;= 16 grams
+                      </p>
+                  </div>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      High Fat meals
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p>
+                          <b>
+                              High fat content meals may produce inaccurate insulin:carbohydrate ratios.
+                          </b>
+                      </p>
+                      <p>
+                          <b>
+                              <br>
+                          </b>
+                          <span id="_mce_caret" data-mce-bogus="true" style="">
+                              ﻿In the vast majority of Diabetics, the same insulin to carbohydrate ratio
+                              hold true for all meals. Yet with some Diabetics, the insulin:carbohydrate
+                              ratio may vary at different meals. Initially, use the insulin to carbohydrate
+                              ratio calculator for all meals to establish correct ratio(s).
+                          </span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <a data-role="button" data-transition="flip" href="#page10">
+              Review Terms &amp; Conditions
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Terms" id="page10">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-transition="flip" href="#home" data-icon="home"
+          data-iconpos="notext" class="ui-btn-left">
+          </a>
+          <h3>
+              Header
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      CAREN’S DIABETES LIFESKILLS, INC.
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      MOBILE APPLICATION TERMS OF SERVICE and PRIVACY POLICY
+                  </strong>
+              </p>
+              <p>
+                  By installing or using this mobile application on your device, you agree
+                  to be bound by the following terms of service and accept the following
+                  privacy policy. This agreement sets forth the legally binding terms and
+                  conditions for your download and use of the mobile application, so please
+                  review this carefully. If you do not agree with any of these terms or conditions,
+                  do not download or use the mobile application.
+              </p>
+              <p>
+                  <strong>
+                      Terms of Service
+                  </strong>
+              </p>
+              <p>
+                  The terms of this agreement (referred to herein as “Terms of Service”
+                  or “Agreement”) govern the relationship between you and Caren’s Diabetes
+                  Life Skills, Inc., located in British Columbia, Canada (“DLS”) regarding
+                  your use of the DLS application for mobile devices, including its text,
+                  images, information, calculations and any other content (“Mobile App”).
+              </p>
+              <p>
+                  Use of the Mobile App is also governed by the DLS Privacy Policy below.
+                  We do not collect, store or use any personally identiﬁable information
+                  through this Mobile App. Nonetheless, we encourage you to read the DLS
+                  Privacy Policy carefully.
+              </p>
+              <p>
+                  By creating an account, accessing, downloading or using the Mobile App
+                  you accept and agree to be bound by these Terms of Service and consent
+                  to the collection, use and storage of your information as outlined in the
+                  DLS Privacy Policy. To download and use this Mobile App you must be of
+                  legal age to form a binding contract and you cannot be barred from receiving
+                  the Mobile App under the laws of Canada or other applicable jurisdiction,
+                  including the country in which you reside or from where you use the Mobile
+                  App. By accepting these Terms of Service, you represent that you understand
+                  and agree to the foregoing, including where applicable representing that
+                  you are of sufﬁcient legal age to use the Mobile App or (subject to applicable
+                  local law) that the account you are using was created and registered by
+                  your parent or legal guardian.
+              </p>
+              <p>
+                  DLS reserves the right, in its sole discretion, to modify or replace all
+                  or any part of the Terms of Service (including, without limitation, pricing
+                  and payment terms set forth in “Fees and Payment”) at any time. You can
+                  download the most current version of the Terms of Service from the third
+                  party site from which you initially downloaded the Mobile App. . It is
+                  your responsibility to check the Terms of Service periodically for changes.
+                  Your continued use of the Mobile App following the posting of any changes
+                  to the Terms of Service constitutes acceptance of those changes.
+              </p>
+              <p>
+                  <strong>
+                      Grant of a Limited License to Use the Service
+                  </strong>
+              </p>
+              <p>
+                  Subject to your agreement and continuing compliance with these Terms of
+                  Service, DLS grants you a non-exclusive, non-transferable, revocable limited
+                  license subject to the limitations in License Limitations, to access, download
+                  and use the Mobile App using a mobile device solely for your own non-commercial
+                  educational purposes. You agree not to use the Mobile App for any other
+                  purpose. DLS is the owner of the Mobile App and all intellectual property
+                  rights in and to the Mobile App. The Mobile App is the subject of Canadian,
+                  U.S. and international patents pending, and the limited license conveyed
+                  hereunder does not provide you any ownership or rights in the Mobile App
+                  beyond the terms herein.
+              </p>
+              <p>
+                  <strong>
+                      Accessing the Service
+                  </strong>
+              </p>
+              <p>
+                  You may be required to have a valid account with the applications provider
+                  for your mobile device. You warrant that you are not prohibited by the
+                  laws of any jurisdiction from downloading and using the Mobile App in the
+                  country in which you reside. You must provide all equipment and software
+                  necessary to connect to the Mobile App, including, but not limited to,
+                  a mobile device that is suitable to connect with and use the Mobile App.
+                  You are responsible for any fees, including internet connection or mobile
+                  fees that you incur when accessing the Mobile App.
+              </p>
+              <p>
+                  <strong>
+                      Use of the Mobile App
+                  </strong>
+              </p>
+              <p>
+                  The following restrictions apply to the use of the Mobile App:
+              </p>
+              <p>
+                  1. You shall not use the Mobile App if you are located in a country where
+                  its use is not permitted by the laws of the country that regulates the
+                  web site from which you have accessed the Mobile App..
+              </p>
+              <p>
+                  2. You shall use the Mobile App only for your own personal use and not
+                  for any commercial or other purposes;
+              </p>
+              <p>
+                  3. You shall not use the Mobile App to engage in any illegal conduct;
+              </p>
+              <p>
+                  4. You shall not sublicense, rent, lease, sell, trade, gift, bequeath
+                  or otherwise transfer your account or the Mobile App to anyone without
+                  written permission from DLS;
+              </p>
+              <p>
+                  5. You shall not access or use a Mobile App that has been sublicensed,
+                  rented, leased, sold, traded, gifted, bequeathed, or otherwise transferred
+                  from the original account creator without DLS permission; and
+              </p>
+              <p>
+                  6. You shall comply with the terms of service/use of the applications
+                  provider for your mobile device as well as these Terms of Service.
+              </p>
+              <p>
+                  <strong>
+                      License Limitations
+                  </strong>
+              </p>
+              <p>
+                  Any use of the Mobile App in violation of the use restrictions in B. above
+                  or of the following License Limitations is strictly prohibited, can result
+                  in the immediate revocation of your limited license granted by Section
+                  II, and may subject you to liability for violations of law. You agree that
+                  you will not, under any circumstances:
+              </p>
+              <p>
+                  • Use the Mobile App, intentionally or unintentionally, in connection
+                  with any violation of any applicable law or regulation, or do anything
+                  that promotes the violation of any applicable law or regulation;
+              </p>
+              <p>
+                  • Modify or cause to be modiﬁed any ﬁles that are a part of the Mobile
+                  App;
+              </p>
+              <p>
+                  • Use the Mobile App or any part thereof for any commercial purpose;
+              </p>
+              <p>
+                  • Except where permitted by law or relevant open source licenses, reverse
+                  engineer, decompile, disassemble, decipher or otherwise attempt to derive
+                  the source code for any underlying software or other intellectual property
+                  used to provide the Mobile App, or to obtain any information from the Mobile
+                  App using any method not expressly permitted by DLS except to the limited
+                  extent applicable laws speciﬁcally prohibit such restriction; or
+              </p>
+              <p>
+                  • Copy, modify or distribute, translate, or otherwise create derivative
+                  works of or from the Mobile App or DLS’ copyrights or trademarks or use
+                  any method to copy or distribute the content of the Mobile App except as
+                  speciﬁcally allowed in these Terms of Service;
+              </p>
+              <p>
+                  • Bypass any measures DLS may use to prevent or restrict access to the
+                  Mobile App (or parts thereof).
+              </p>
+              <p>
+                  <strong>
+                      Application and Registration Process
+                  </strong>
+              </p>
+              <p>
+                  The Mobile App is designed to assist you in monitoring and calculating
+                  your insulin/ carbohydrate ratio. You may use the Mobile App only after
+                  you (a) have purchased the Mobile App and (b) have downloaded and installed
+                  the Mobile App on your device.
+              </p>
+              <p>
+                  THE MOBILE APP DOES NOT PROVIDE MEDICAL ADVICE AND IS NOT A MEDICAL DEVICE
+              </p>
+              <p>
+                  The Mobile App is provided for educational purposes only and is not intended
+                  to diagnose, treat, mitigate, cure or prevent any disease or condition.
+                  Please consult your healthcare provider before making any health, medical
+                  or other decisions or if you have any questions about your health or treatment.
+              </p>
+              <p>
+                  DLS are not physicians and are not licensed to give medical advice. The
+                  Mobile App is not a substitute for professional medical advice. The Mobile
+                  App is not intended for use in the diagnosis of disease or other conditions,
+                  nor in the cure, mitigation, treatment or prevention of any disease. Always
+                  seek the advice of your physician or other qualiﬁed health provider with
+                  any questions you may have regarding a medical condition or the use (or
+                  frequency) of any monitoring, medication or medical device. Never disregard
+                  professional medical advice or delay in seeking it because of something
+                  you have read on the Mobile App.
+              </p>
+              <p>
+                  You are solely responsible for the information that you input into the
+                  Mobile App and for any decisions or actions you take based on the output
+                  of the Mobile App. Reliance on the output of the Mobile App or any information
+                  provided by DLS in connection with the Mobile App is solely at your own
+                  risk.
+              </p>
+              <p>
+                  If you think you may have a medical emergency, call your doctor or 911
+                  immediately.
+              </p>
+              <p>
+                  <strong>
+                      Termination
+                  </strong>
+              </p>
+              <p>
+                  DLS may terminate your license to use or further access any updates to
+                  the Mobile App, or any part thereof at any time if you fail to comply with
+                  these Terms of Service. This may result in the forfeiture and destruction
+                  of all information associated with your installed Mobile App and will immediately
+                  terminate your right to use the Mobile App in any way. If you wish to terminate
+                  your account, you may do so by ceasing use of the Mobile App, and deleting
+                  the Mobile App from your mobile device. All provisions of the Terms of
+                  Service, which by their nature should survive termination, shall survive
+                  termination, including, without limitation, warranty disclaimers, indemnity
+                  and limitations of liability.
+              </p>
+              <p>
+                  <strong>
+                      Warranty Disclaimer
+                  </strong>
+              </p>
+              <p>
+                  THE MOBILE APP IS PROVIDED “AS IS” AND “AS AVAILABLE” AND IS WITHOUT WARRANTY
+                  OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+                  WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR
+                  A PARTICULAR PURPOSE, AND ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE
+                  OR USAGE OF TRADE, ALL OF WHICH ARE EXPRESSLY DISCLAIMED. DLS AND ITS DIRECTORS,
+                  EMPLOYEES, AGENTS, SUPPLIERS, AND PARTNERS DO NOT WARRANT THAT: (A) THE
+                  SERVICE WILL BE SECURE OR AVAILABLE AT ANY PARTICULAR TIME OR LOCATION;
+                  (B) ANY DEFECTS OR ERRORS WILL BE CORRECTED; (C) ANY CONTENT OR SOFTWARE
+                  AVAILABLE AT OR THROUGH THE SERVICE IS FREE OF VIRUSES OR OTHER HARMFUL
+                  COMPONENTS; OR (D) THE RESULTS OF USING THE SERVICE WILL MEET YOUR REQUIREMENTS.
+                  YOUR USE OF THE SERVICE IS SOLELY AT YOUR OWN RISK. SOME STATES DO NOT
+                  ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATIONS
+                  MAY NOT APPLY TO YOU.
+              </p>
+              <p>
+                  Note, you may have legal rights in your country of residence which are
+                  different, limit or prohibit these limitations from applying to you, and
+                  where prohibited they will not apply to you.
+              </p>
+              <p>
+                  <strong>
+                      Indemniﬁcation
+                  </strong>
+              </p>
+              <p>
+                  You shall defend, indemnify, and hold harmless DLS, its afﬁliates and
+                  each of its, and its afﬁliates, employees, contractors, directors, suppliers
+                  and representatives from all liabilities, losses, claims, and expenses,
+                  including reasonable attorneys’ fees, that arise from or relate to (i)
+                  your use or misuse of, or access to, the Mobile App, or (ii) your violation
+                  of the Terms of Service or any applicable law, contract, policy, regulation
+                  or other obligation. DLS reserves the right to assume the exclusive defense
+                  and control of any matter otherwise subject to indemniﬁcation by you, in
+                  which event you will assist and cooperate with DLS in connection therewith.
+              </p>
+              <p>
+                  <strong>
+                      Limitation of Liability
+                  </strong>
+              </p>
+              <p>
+                  TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL DLS (NOR ITS
+                  DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, CONTENT PROVIDERS) BE LIABLE UNDER
+                  CONTRACT, TORT, STRICT LIABILITY, NEGLIGENCE OR ANY OTHER LEGAL OR EQUITABLE
+                  THEORY WITH RESPECT TO THE MOBILE APP (i) FOR ANY DATA LOSS, LOSS OF GOODWILL
+                  OR OPPORTUNITY, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR
+                  SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY
+                  KIND WHATSOEVER, OR SUBSTITUTE GOODS OR SERVICES, (ii) FOR YOUR RELIANCE
+                  ON THE MOBILE APP (iii) FOR ANY DIRECT DAMAGES IN EXCESS (IN THE AGGREGATE)
+                  OF THE FEES PAID BY YOU FOR THE MOBILE APP IN THE TWELVE (12) MONTHS PRECEDING
+                  THE APPLICABLE CLAIM OR (iv) FOR ANY MATTER BEYOND ITS OR THEIR REASONABLE
+                  CONTROL, EVEN IF DLS HAS BEEN ADVISED OF THE POSSIBILITY OF ANY OF THE
+                  AFOREMENTIONED DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR
+                  LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS
+                  AND EXCLUSIONS MAY NOT APPLY TO YOU.
+              </p>
+              <p>
+                  <strong>
+                      Dispute Resolution
+                  </strong>
+              </p>
+              <p>
+                  A printed version of the Terms of Service and of any notice given in electronic
+                  form shall be admissible in judicial or administrative proceedings based
+                  upon or relating to the Terms of Service to the same extent and subject
+                  to the same conditions as other business documents and records originally
+                  generated and maintained in printed form. You and DLS agree that any cause
+                  of action arising out of or related to the Mobile App must commence within
+                  one (1) year after the cause of action arose; otherwise, such cause of
+                  action is permanently barred. The Terms of Service shall be governed by
+                  and construed in accordance with the laws of British Columbia, Canada,
+                  without regard for its conﬂicts of law rules. For all purposes of this
+                  Agreement, the parties consent to exclusive jurisdiction and venue in the
+                  courts located in Vancouver, British Columbia. This Agreement shall not
+                  be governed by the United Nations Convention on Contracts for the International
+                  Sale of Goods, the application of which is expressly excluded. Any translation
+                  of this Agreement which may be done is for local requirements only and
+                  in the event of a dispute between the English and any non-English versions,
+                  the English version of this Agreement shall govern, to the extent not prohibited
+                  by local law in your jurisdiction.
+              </p>
+              <p>
+                  <strong>
+                      Privacy Policy
+                  </strong>
+              </p>
+              <p>
+                  By using the Mobile App you acknowledge that you accept the practices
+                  and policies outlined in this Privacy Policy. If you have questions or
+                  concerns regarding this policy, please contact us at the email address
+                  provided below. This policy may change, so please check back periodically
+                  or if you download a new version of the Mobile App.
+              </p>
+              <p>
+                  DLS does not collect or retain any personally identiﬁable information
+                  from you or from your use of the Mobile App. DLS does not collect Internet
+                  “cookies” (small ﬁles that may be placed on your hard disk for record-keeping
+                  purposes), clear GIFs or your IP address (the Internet address of a computer).
+              </p>
+              <p>
+                  Note, however, third party Internet sites and services through which you
+                  accessed the Mobile App have separate privacy and data collection practices,
+                  independent of us. DLS has no responsibility or liability for these independent
+                  policies or actions. Please be careful and responsible online. If you post
+                  personal information online that is accessible to the public, you may receive
+                  unsolicited messages from other parties in return.
+              </p>
+              <p>
+                  <strong>
+                      MISCELLANEOUS
+                  </strong>
+              </p>
+              <p>
+                  The Terms of Service are the entire agreement between you and DLS with
+                  respect to the Mobile App, and supersede all prior or contemporaneous communications
+                  and proposals (whether oral, written or electronic) between you and DLS
+                  with respect to the Mobile App. If any provision of the Terms of Service
+                  is found to be unenforceable or invalid, that provision will be limited
+                  or eliminated to the minimum extent necessary so that the Terms of Service
+                  will otherwise remain in full force and effect and enforceable. The failure
+                  of either party to exercise in any respect any right provided for herein
+                  shall not be deemed a waiver of any further rights hereunder. The Terms
+                  of Service are personal to you, and are not assignable or transferable
+                  by you except with DLS’s prior written consent. DLS may assign, transfer
+                  or delegate any of its rights and obligations hereunder without consent.
+                  No agency, partnership, joint venture, or employment relationship is created
+                  as a result of the Terms of Service and neither party has any authority
+                  of any kind to bind the other in any respect. All notices under the Terms
+                  of Service will be in writing and will be deemed to have been duly given
+                  when receipt is electronically conﬁrmed, if transmitted by e-mail.
+              </p>
+              <p>
+                  <strong>
+                      CONTACT
+                  </strong>
+              </p>
+              <p>
+                  If you have any questions regarding the Mobile App, please contact DLS
+                  at cdiabeteslifeskills@gmail.com.
+              </p>
+              <p>
+                  Effective Date: February 2013
+              </p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
