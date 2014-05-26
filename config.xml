@@ -33,21 +33,21 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <icon src="/res/icon/icon.png" />
+    <icon src="res/icon/icon.png" />
     
     <!-- iPhone / iPod Touch  -->
-	<icon src="/res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
-	<icon src="/res/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+	<icon src="res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
+	<icon src="res/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
 	
 	<!-- iPad -->
-	<icon src="/res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
-	<icon src="/res/icon/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+	<icon src="res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="res/icon/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
 	
-	<icon src="/res/icon/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-	<icon src="/res/icon/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-	<icon src="/res/icon/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-	<icon src="/res/icon/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<icon src="/res/icon/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="res/icon/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="res/icon/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="res/icon/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="res/icon/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="res/icon/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
     
     <gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
