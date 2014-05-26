@@ -35,7 +35,7 @@
     <preference name="android-installLocation" value="auto" />
     
     <!-- default icon -->
-    <icon src="res/icon/icon.png" />
+    <icon src="res/icon/icon.png" gap:role="default"/>
     
     <!-- iPhone / iPod Touch  -->
 	<icon src="res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
@@ -60,6 +60,7 @@
     <gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />-->
+    
     <content src="index.html" />
     <access origin="http://carbzsos.com" subdomains="true" />
 </widget>
