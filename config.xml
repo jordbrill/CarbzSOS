@@ -34,7 +34,7 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
     
-    <icon src="res/icon/icon.png" gap:role="default"/>
+    <icon src="icon.png" gap:role="default"/>
 
        
     <content src="index.html" />
