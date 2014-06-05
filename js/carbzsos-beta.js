@@ -20,75 +20,100 @@ $(function(){
 		}
 
 		$.mobile.changePage($(this).attr('href'), { transition: 'slide', reverse: false });
+		var pageID = $(this).attr('href');
+		setTimeout(function(){
+			$(pageID).find('input').focus();
+		}, 350);
 	}
 	function input_validation(event){
 		event.stopImmediatePropagation();
     	event.preventDefault();
-
+    	//find the closest input to the button as this is the one the user has inputed a value and the previous ones exsist with values
 		var closest_input_val = $(this).parent().find('input').val();
-
-		if(closest_input_val.length == 0){
-			alert('This value must be a number and cannot be empty');
+		//which units are we using
+		var units = ($('#radio1').is(':checked')) ? 'mmol' : 'mg';
+		//not empty and greater than 0
+		if(closest_input_val.length == 0 || closest_input_val <= 0){
+			alert('This value must be a positive number and cannot be empty');
 			return false;
 		}
+		//is numeric
 		else if(! $.isNumeric(closest_input_val)){
 			alert('This value must be a number');
 			return false;
 		}
+		//next two ifs alert them they are in danger is blood suger is too low or high
 		else if($(this).attr("id") == 'before_meal_blood_suger_button'){
 			var blood_val = $('#textinput2').val();
-
-	        if(blood_val < 4){
-	        	alert('Your blood sugar is too low');
-	        	return false;
-	        	
-	        }
-	      	else if(blood_val > 25){
-	      		alert('Your blood sugar is very high! Please seek medical attention!');
-	      		return false;
-	      		
+			if(units == 'mmol'){
+		        if(blood_val < 4){
+		        	alert('Your blood sugar is too low! Please seek medical attention!');
+		        	return false;
+		        	
+		        }
+		      	else if(blood_val > 25){
+		      		alert('Your blood sugar is very high! Please seek medical attention!');
+		      		//return false;
+		      		
+		      	}
+	      	}
+	      	else{
+	      		//blood_val = blood_val / 18;
+	      		if(blood_val < 72){
+		        	alert('Your blood sugar is too low! Please seek medical attention!');
+		        	return false;
+		        	
+		        }
+		      	else if(blood_val > 450){
+		      		alert('Your blood sugar is very high! Please seek medical attention!');
+		      		//return false;
+		      		
+		      	}
 	      	}
 		}
 		else if($(this).attr("id") == 'after_meal_blood_suger_button'){
 			var blood_val = $('#textinput3').val();
-
-	        if(blood_val < 5){
-	        	alert('Your blood sugar is too low');
-	        	return false;
-	        }
-	      	else if(blood_val > 25){
-	      		alert('Your blood sugar is very high! Please seek medical attention!');
-	      		return false;
-	      	}
+			if(units == 'mmol'){
+		        if(blood_val < 5){
+		        	alert('Your blood sugar is too low! Please seek medical attention!');
+		        	return false;
+		        }
+		      	else if(blood_val > 25){
+		      		alert('Your blood sugar is very high! Please seek medical attention!');
+		      		//return false;
+		      	}
+		      }
+		      else{
+		      	//blood_val = blood_val / 18;
+				if(blood_val < 90){
+		        	alert('Your blood sugar is too low! Please seek medical attention!');
+		        	return false;
+		        }
+		      	else if(blood_val > 450){
+		      		alert('Your blood sugar is very high! Please seek medical attention!');
+		      		//return false;
+		      	}
+		      }
 		}
+		//calculate their level if at that step
 		else if($(this).attr("id") == 'calc_levels'){
-			var isfcf = $('#textinput1').val();
-			var beforemeal = $('#textinput2').val();
-			var aftermeal = $('#textinput3').val();
-			var insulin = $('#textinput4').val();
-			var carbs = $('#textinput5').val();
-
-			var response = calculate('mmol',  parseFloat(isfcf), parseFloat(beforemeal), parseFloat(aftermeal), parseFloat(insulin), parseFloat(carbs));	
+			var isfcf 		= $('#textinput1').val();
+			var beforemeal 	= $('#textinput2').val();
+			var aftermeal 	= $('#textinput3').val();
+			var insulin 	= $('#textinput4').val();
+			var carbs 		= $('#textinput5').val();
+			
+			var response 	= calculate(units,  parseFloat(isfcf), parseFloat(beforemeal), parseFloat(aftermeal), parseFloat(insulin), parseFloat(carbs));	
 		   // alert(response);
-		    $('#calculation_result_text').text(response);
+		    $('#calculation_result_text').html(response);
 		}
+		//if all passes move to the next slide
 		$.mobile.changePage($(this).attr('href'), { transition: 'slide', reverse: false });
-		//window.location = $(this).attr('href');
+		var pageID = $(this).attr('href');
+		setTimeout(function(){
+			$(pageID).find('input').focus();
+		}, 350);
 	}
-
-	function calc_levels(event){
-		
-		
-		var isfcf = $('#textinput1').val();
-		var beforemeal = $('#textinput2').val();
-		var aftermeal = $('#textinput3').val();
-		var insulin = $('#textinput4').val();
-		var carbs = $('#textinput5').val();
-
-		var response = calculate('mmol', parseFloat(isfcf), parseFloat(beforemeal), parseFloat(aftermeal), parseFloat(insulin), parseFloat(carbs));	
-	    alert(response);
-	    $('#calculation_result_text').text(response);
-	 }
 	
 	function calculate(measurement, isfcf, beforemeal, aftermeal, insulin, carbs) {
 	
@@ -136,6 +161,13 @@ $(function(){
 		
 		var M = (Math.round( L * 10 ) / 10).toFixed(1);	
 		
+		var decimal = M.indexOf('.');
+
+		if(decimal !== -1){
+			M = M + '</span>';
+			M = M.replace('.', '.<span class="decimal">');
+		}
+		
 		return '1:' + M;
 	}
 	else{
@@ -145,29 +177,30 @@ $(function(){
 
 function calculate_mg(isfcf, beforemeal, aftermeal, insulin, carbs) {
 	
-	
-		if(beforemeal < 4){
+		//beforemeal = beforemeal / 18;
+		if(beforemeal < 72){
 			//return 'ALERT! Your After Meal Blood Sugar is Low!';
 		}
-		else if(beforemeal >= 4 && beforemeal <= 7){
-			var B = 7;		
+		else if(beforemeal >= 72 && beforemeal <= 126){
+			var B = 126 / 18;		
 		}else{
-			var B = beforemeal;
+			var B = beforemeal / 18;
 		}
-		
-		
-		if(aftermeal < 5){
+		B = B.toFixed(1);
+		//aftermeal = aftermeal / 18;
+		if(aftermeal < 90){
 			//return 'ALERT! Your After Meal Blood Sugar is Low!';
 		}
-		else if(aftermeal >= 5 && aftermeal <= 10){
-			var E = 10;
+		else if(aftermeal >= 90 && aftermeal <= 180){
+			var E = 180 / 18;
 		}
 		else{
-			var E = aftermeal;
+			var E = aftermeal / 18;
 		}
 		
+		E = E.toFixed(1);
 		
-		var A = isfcf;
+		var A = (isfcf/ 18).toFixed(1);
 
 		var I = insulin;	
 		
@@ -189,6 +222,13 @@ function calculate_mg(isfcf, beforemeal, aftermeal, insulin, carbs) {
 		
 		var M = (Math.round( L * 10 ) / 10).toFixed(1);	
 		
+		var decimal = M.indexOf('.');
+
+		if(decimal !== -1){
+			M = M + '</span>';
+			M = M.replace('.', '.<span class="decimal">');
+		}
+
 		return '1:' + M;
 }
 

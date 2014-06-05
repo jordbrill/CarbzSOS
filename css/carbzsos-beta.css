@@ -5,43 +5,35 @@ body{
         
     h1,h2,h3,h4,h5{
             font-weight:100 !important;
+            color:#263646 !important;
         }   
     
-    .ui-panel-content-wrap{
-             background:#55b3d6 ;
+    .ui-panel-content-wrap, .ui-body-c{
+             background:#d6e3f3 ;
         }
     .logo-padding{
             padding:40px 0;
         }
     
-    .no-background{
-            background:#55b3d6 !important; 
-            border-bottom:none !important;
-    }
-    
+    .ui-bar-b {
+	    background-color: #33495f;
+	    border-color:#33495f;
+    }    
     /*Allow for bigger titles in header*/
     .ui-header .ui-title, .ui-footer .ui-title {
     margin: .6em 15% .8em;
+    color:#fff !important;
     
     }
+  
+    /*header button panel color*/ 
+    .ui-header .ui-btn-up-d, .ui-header .ui-btn-left, .ui-header .ui-btn-right{background-color:#4a6784 !important;border-color:#263646 !important}
+    .ui-header .ui-btn-hover-d {background-color:#5c7fa2 !important;border-color:#263646 !important}
     
-    /*hide menu button styling*/
-    #panel-button{
-        background: none !important;
-        border:none !important;
-    }
     
-    #panel-button .ui-btn-inner{
-        border:none !important;
-    }
     
-    /*Hide Box shadow on menu panel button*/
-    .ui-bar-a .ui-shadow, .ui-bar-b .ui-shadow, .ui-bar-c .ui-shadow {
-    -moz-box-shadow: 0 0px 0 rgba(255,255,255,.1);
-    -webkit-box-shadow: 0 0px 0 rgba(255,255,255,.1);
-    box-shadow: 0 0px 0 rgba(255,255,255,.1);
-    }
-    
+    .ui-collapsible-heading-toggle.ui-btn-up-b{background-color:#4a6784 !important;border-color:#263646 !important}
+     .ui-collapsible-heading-toggle.ui-btn-hover-b{background-color:#5c7fa2 !important;border-color:#263646 !important}
     
     .ui-btn-hover-b, .ui-btn-up-b{font-weight:100 !important;}
     
@@ -51,8 +43,8 @@ body{
 	    background: #74b637;
 		font-size:4em;
 		color:#fff;
-		padding:30px 0px;
-		font-weight:100;
+		padding:30px 0px 30px 0px;
+		font-weight:bold;
 		-moz-border-radius: 10px;
 		-webkit-border-radius: 10px;
 		border-radius: 10px;
@@ -67,3 +59,5 @@ body{
     }
     
     div.ui-input-text input.ui-input-text{}
+    
+    .decimal{font-weight:100 !important}
