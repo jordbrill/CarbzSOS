@@ -5,11 +5,11 @@ body{
         
     h1,h2,h3,h4,h5{
             font-weight:100 !important;
-            color:#263646 !important;
+            color:#fff !important;
         }   
     
     .ui-panel-content-wrap, .ui-body-c{
-             background:#d6e3f3 ;
+             background:#55b3d6 ;
         }
     .logo-padding{
             padding:40px 0;
@@ -21,8 +21,8 @@ body{
     }    
     /*Allow for bigger titles in header*/
     .ui-header .ui-title, .ui-footer .ui-title {
-    margin: .6em 15% .8em;
-    color:#fff !important;
+    	margin: .6em 15% .8em;
+		color:#fff !important;
     
     }
   
@@ -52,6 +52,10 @@ body{
 		border-color:rgba(255,255,255,.2);
     }
     
+    #calculation_result_text2{
+	    font-weight:bold;
+    }
+    
     div.ui-input-text{
 	    width:100% !important;
 	    background:#fff;
@@ -60,4 +64,6 @@ body{
     
     div.ui-input-text input.ui-input-text{}
     
-    .decimal{font-weight:100 !important}
+    .decimal{font-size:0.75em;font-weight: bold;}
+    
+    .ui-br{border-color:#1f9bc9 !important}
