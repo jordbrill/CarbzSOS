@@ -5,19 +5,19 @@ body{
         
     h1,h2,h3,h4,h5{
             font-weight:100 !important;
-            color:#fff !important;
+            color:#5c89c7 !important;
         }   
     
     .ui-panel-content-wrap, .ui-body-c{
-             background:#55b3d6 ;
+             background:#cce0ff ;
         }
     .logo-padding{
             padding:40px 0;
         }
     
     .ui-bar-b {
-	    background-color: #33495f;
-	    border-color:#33495f;
+	    background-color: #5c89c7;
+	    border-color:#4770a0;
     }    
     /*Allow for bigger titles in header*/
     .ui-header .ui-title, .ui-footer .ui-title {
@@ -27,20 +27,20 @@ body{
     }
   
     /*header button panel color*/ 
-    .ui-header .ui-btn-up-d, .ui-header .ui-btn-left, .ui-header .ui-btn-right{background-color:#4a6784 !important;border-color:#263646 !important}
-    .ui-header .ui-btn-hover-d {background-color:#5c7fa2 !important;border-color:#263646 !important}
+    .ui-header .ui-btn-up-d, .ui-header .ui-btn-left, .ui-header .ui-btn-right{background-color:#5c89c7 !important;border-color:#4770a0 !important}
+    .ui-header .ui-btn-hover-d {background-color:#a7bae0 !important;border-color:#5c89c7 !important}
     
     
     
-    .ui-collapsible-heading-toggle.ui-btn-up-b{background-color:#4a6784 !important;border-color:#263646 !important}
-     .ui-collapsible-heading-toggle.ui-btn-hover-b{background-color:#5c7fa2 !important;border-color:#263646 !important}
+    .ui-collapsible-heading-toggle.ui-btn-up-b{background-color:#5c89c7 !important;border-color:#4770a0 !important}
+     .ui-collapsible-heading-toggle.ui-btn-hover-b{background-color:#a7bae0 !important;border-color:#5c89c7 !important}
     
     .ui-btn-hover-b, .ui-btn-up-b{font-weight:100 !important;}
     
     .accordian{background:#fff;}
     
     #calculation_result_text{
-	    background: #74b637;
+	    background: #51d78a;
 		font-size:4em;
 		color:#fff;
 		padding:30px 0px 30px 0px;
@@ -67,3 +67,13 @@ body{
     .decimal{font-size:0.75em;font-weight: bold;}
     
     .ui-br{border-color:#1f9bc9 !important}
+    
+    div.ui-input-text, .ui-controlgroup .ui-radio label{
+	    border:1px solid #b0bfd6;
+    }
+    
+    .ui-controlgroup-vertical .ui-btn.ui-last-child{
+	    border-top:none !important;
+    }
+    
+    .ui-panel-open{background:#fff }
