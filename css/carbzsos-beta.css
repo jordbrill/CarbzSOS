@@ -5,19 +5,19 @@ body{
         
     h1,h2,h3,h4,h5{
             font-weight:100 !important;
-            color:#5c89c7 !important;
+            color:#ffffff !important;
         }   
     
     .ui-panel-content-wrap, .ui-body-c{
-             background:#cce0ff ;
+             background:#55b3d6 ;
         }
     .logo-padding{
             padding:40px 0;
         }
     
     .ui-bar-b {
-	    background-color: #5c89c7;
-	    border-color:#4770a0;
+	    background-color: #1f9bc9;
+	    border-color:#1f87ae;
     }    
     /*Allow for bigger titles in header*/
     .ui-header .ui-title, .ui-footer .ui-title {
@@ -27,20 +27,20 @@ body{
     }
   
     /*header button panel color*/ 
-    .ui-header .ui-btn-up-d, .ui-header .ui-btn-left, .ui-header .ui-btn-right{background-color:#5c89c7 !important;border-color:#4770a0 !important}
-    .ui-header .ui-btn-hover-d {background-color:#a7bae0 !important;border-color:#5c89c7 !important}
+    .ui-header .ui-btn-up-d, .ui-header .ui-btn-left, .ui-header .ui-btn-right{background-color:#1f9bc9 !important;border-color:#1f87ae !important}
+    .ui-header .ui-btn-hover-d {background-color:#3eb9e5 !important;border-color:#1f87ae !important}
     
     
     
-    .ui-collapsible-heading-toggle.ui-btn-up-b{background-color:#5c89c7 !important;border-color:#4770a0 !important}
-     .ui-collapsible-heading-toggle.ui-btn-hover-b{background-color:#a7bae0 !important;border-color:#5c89c7 !important}
+    .ui-collapsible-heading-toggle.ui-btn-up-b{background-color:#1f9bc9 !important;border-color:#1f87ae !important}
+     .ui-collapsible-heading-toggle.ui-btn-hover-b{background-color:#3eb9e5 !important;border-color:#1f87ae !important}
     
     .ui-btn-hover-b, .ui-btn-up-b{font-weight:100 !important;}
     
     .accordian{background:#fff;}
     
     #calculation_result_text{
-	    background: #51d78a;
+	    background: #a7cb00;
 		font-size:4em;
 		color:#fff;
 		padding:30px 0px 30px 0px;
@@ -77,3 +77,9 @@ body{
     }
     
     .ui-panel-open{background:#fff }
+    .ui-controlgroup-label{color:#fff;}
+    #terms .ui-content{background:#fff;}
+    
+    
+    .ui-btn-up-d,.ui-btn-down-d{background:#a7cb00}
+    .ui-btn-hover-d{background:#bcda26}
