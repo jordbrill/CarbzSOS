@@ -21,9 +21,9 @@ $(function(){
 
 		$.mobile.changePage($(this).attr('href'), { transition: 'slide', reverse: false });
 		var pageID = $(this).attr('href');
-		setTimeout(function(){
+		/*setTimeout(function(){
 			$(pageID).find('input').focus();
-		}, 350);
+		}, 350);*/
 	}
 	function input_validation(event){
 		event.stopImmediatePropagation();
