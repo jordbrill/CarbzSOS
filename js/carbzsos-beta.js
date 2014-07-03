@@ -111,9 +111,9 @@ $(function(){
 		//if all passes move to the next slide
 		$.mobile.changePage($(this).attr('href'), { transition: 'slide', reverse: false });
 		var pageID = $(this).attr('href');
-		setTimeout(function(){
+		/*setTimeout(function(){
 			$(pageID).find('input').focus();
-		}, 350);
+		}, 350);*/
 	}
 	
 	function calculate(measurement, isfcf, beforemeal, aftermeal, insulin, carbs) {
