@@ -12,7 +12,7 @@ body{
              background:#55b3d6 ;
         }
     .logo-padding{
-            padding:40px 0;
+            padding:20px 0 20px 0;
         }
     
     .ui-bar-b {
@@ -83,3 +83,6 @@ body{
     
     .ui-btn-up-d,.ui-btn-down-d{background:#a7cb00}
     .ui-btn-hover-d{background:#bcda26}
+    
+    table{background: #f3f3f3;padding:5px;}
+    table td{padding:3px;}
