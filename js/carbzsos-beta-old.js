@@ -1,11 +1,10 @@
-
 $(function(){
 	//bind events
-	$('.input-needs-validation').bind( "tap", input_validation );
-	$('.input-needs-validation').bind( "click", input_validation );
+	$('.input-needs-validation').bind("tap", input_validation);
+	$('.input-needs-validation').bind("click", input_validation);
 
-	$('#units-button').bind( "tap", unit_radio_check );
-	$('#units-button').bind( "click", unit_radio_check );
+	$('#units-button').bind("tap", unit_radio_check);
+	$('#units-button').bind("click", unit_radio_check);
 
 
 	function unit_radio_check(event){
@@ -27,8 +26,8 @@ $(function(){
 
 		var closest_input_val = $(this).parent().find('input').val();
 
-		if(closest_input_val.length == 0){
-			alert('This value must be a number and cannot be empty');
+		if(closest_input_val.length == 0 || closest_input_val <= 0){
+			alert('This value must be a positive number and cannot be empty');
 			return false;
 		}
 		else if(! $.isNumeric(closest_input_val)){
