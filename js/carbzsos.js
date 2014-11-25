@@ -14,7 +14,7 @@ $(function(){
 		var closest_input_val = $(this).parent().find('input')
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
-			navigator.notification.alert('Please choose a unit of measurement');
+			alert('Please choose a unit of measurement', 'CarbzSOS');
 			return false;
 		}
 
