@@ -1,15 +1,15 @@
 $(function(){
 	//bind events
-	$('.input-needs-validation').bind( "tap", input_validation );
-	$('.input-needs-validation').bind( "click", input_validation );
+	$('.input-needs-validation').on( "click", input_validation );
+	//$('.input-needs-validation').bind( "click", input_validation );
 
-	$('#units-button').bind( "tap", unit_radio_check );
-	$('#units-button').bind( "click", unit_radio_check );
+	$('#units-button').on( "click", unit_radio_check );
+	//$('#units-button').bind( "click", unit_radio_check );
 
 
 	function unit_radio_check(event){
 		event.stopImmediatePropagation();
-    	event.preventDefault();
+    	//event.preventDefault();
 
 		var closest_input_val = $(this).parent().find('input')
 
@@ -55,7 +55,7 @@ $(function(){
 		        }
 		      	else if(blood_val > 25){
 		      		alert('Your blood sugar is high! Please seek medical attention!');
-		      		return false;
+		      		//return false;
 		      		
 		      	}
 	      	}
@@ -69,7 +69,7 @@ $(function(){
 		        }
 		      	else if(blood_val > 450){
 		      		alert('Your blood sugar is high! Please seek medical attention!');
-		      		return false;
+		      		//return false;
 		      		
 		      	}
 	      	}
@@ -83,7 +83,7 @@ $(function(){
 		        }
 		      	else if(blood_val > 25){
 		      		alert('Your blood sugar is high! Please seek medical attention!');
-		      		return false;
+		      		//return false;
 		      	}
 		      }
 		      else{
@@ -94,7 +94,7 @@ $(function(){
 		        }
 		      	else if(blood_val > 450){
 		      		alert('Your blood sugar is high! Please seek medical attention!');
-		      		return false;
+		      		//return false;
 		      	}
 		      }
 		}

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <title>CarbzSOS</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <!--
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -12,14 +12,16 @@
     
     <link href="css/codiqa.ext.min.css" rel="stylesheet">
     <link href="css/jqm-neue.css" rel="stylesheet">
-    <link href="css/carbzsos-beta.css" rel="stylesheet">
+    <link href="css/carbzsos.css" rel="stylesheet">
 
     <script src="phonegap.js"></script>
     <script src="childbrowser.js"></script>
+    
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/jquery.mobile-1.3.1.js"></script>
     <script src="js/codiqa.ext.min.js"></script>
     <script src="js/carbzsos.js"></script>
+    
 </head>
 <body>
   <div data-role="page" data-control-title="Home" data-theme="d" id="page3">
@@ -77,18 +79,16 @@
                   </span>
                   <br>
                   <span style="font-size: small; color: #ffffff;">
-                      <a href="#terms" data-mce-href="#terms">
-                          <span style="color: #ffffff;">
-                              Terms and Conditions
-                          </span>
+                      <a href="#terms" data-mce-href="#terms" span style="color: #fff; text-decoration:none;">
+                        Terms and Conditions
                       </a>
                       <br /><br />
-                          <b>PRIOR TO USING THIS EDUCATIONAL TOOL, CONSULT YOUR HEALTHCARE PROVIDER.</b>
+                          <em>PRIOR TO USING THIS EDUCATIONAL TOOL, CONSULT YOUR HEALTHCARE PROVIDER.</em>
                   </span>
               </p>
           </div>
-          <a data-role="button" data-transition="pop" href="#page4" data-icon="arrow-r" data-iconpos="right">
-              Continue
+          <a data-role="button" data-transition="slide" data-theme="d" href="#page4"  data-icon="arrow-r" data-iconpos="right" class="large Glowing" style="margin-top:25px;">
+              Begin Calculating
           </a>
       </div>
   </div>
@@ -118,9 +118,6 @@
           </div>
           <div data-role="fieldcontain" data-controltype="radiobuttons">
               <fieldset data-role="controlgroup" data-type="vertical">
-                  <legend>
-                      Choose:
-                  </legend>
                   <input id="radio1" name="" value="mmol/L" type="radio">
                   <label for="radio1">
                       mmol/L
@@ -131,8 +128,12 @@
                   </label>
               </fieldset>
           </div>
-          <a data-role="button" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right">
+          <a data-role="button" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right" class="large">
               Continue
+          </a>
+          
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
+              Learn More
           </a>
       </div>
   </div>
@@ -155,238 +156,87 @@
               <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
                   Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin
                   will lower your blood sugar.
-              </p>
-              
-              
-              <div data-role="collapsible-set" data-theme="b" class="accordian">
-              <div data-role="collapsible">
-                  <h3>
-                      ISF/CF
-                  </h3>
-                  <div data-controltype="textblock">
-                      <p>
-                          ISF (Insulin sensitivity factor) = CF (Insulin correction factor)
-                      </p>
-                      <p>
-                          <strong>
-                              What is your ISF or CF?
-                          </strong>
-                      </p>
-                      <p>
-                          Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin
-                          will lower your blood sugar.
-                      </p>
-                      <p>
-                          Example:
-                      </p>
-                  </div>
-                  <div data-controltype="textblock">
-                      <p>
-                          <strong>
-                              mmol/L
-                              <br>
-                          </strong>
-                          1 unit of Rapid (mealtime) Insulin lowers your blood sugar 2 mmol, your
-                          ISF or CF is 1:2
-                      </p>
-                  </div>
-                  <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
-                  <div data-controltype="textblock">
-                      <p>
-                          <strong>
-                              mg/dL
-                          </strong>
-                          <br>
-                          1 unit of Rapid (mealtime) Insulin lowers your blood sugar 36 mg/dL, your
-                          ISF or CF is 1:36
-                      </p>
-                  </div>
-              </div>
-              <div data-role="collapsible">
-                  <h3>
-                      ISF/CF recommendations
-                  </h3>
-                  <div data-controltype="textblock">
-                      <p>
-                          <span style="font-size: large;">
-                              <strong>
-                                  mmol/L
-                              </strong>
-                          </span>
-                      </p>
-                      <p>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <strong>
-                                  Adult Type 2 (Adult diabetes): 2
-                              </strong>
-                          </span>
-                          <br>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <em>
-                                  This value may require adjusting for some Type 2 individuals.
-                              </em>
-                          </span>
-                      </p>
-                      
-                      <p>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <strong>
-                                  Adult Type 1.5 (Adult diabetes): 3
-                              </strong>
-                          </span>
-                          <br>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <em>
-                                  This value may require adjusting for some Type 1.5 individuals.
-                              </em>
-                          </span>
-                      </p>
-                      
-                      <p>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <strong>
-                                  Adult Type 1 (Juvenile diabetes): 3 or 4
-                              </strong>
-                          </span>
-                          <br>
-                          <em>
-                              <span style="font-size: small;" data-mce-style="font-size: small;">
-                                  This value may require adjusting for some Type 1 individuals.
-                              </span>
-                          </em>
-                      </p>
-                  </div>
-                  <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
-                  <div data-controltype="textblock">
-                      <p>
-                          <span style="font-size: large;" data-mce-style="font-size: large;">
-                              <strong>
-                                  mg/dL
-                              </strong>
-                          </span>
-                      </p>
-                      <p>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <strong>
-                                  Adult Type 2 (Adult diabetes): 36
-                              </strong>
-                          </span>
-                          <br>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <em>
-                                  This value may require adjusting for some Type 2 individuals.
-                              </em>
-                          </span>
-                      </p>
-                      
-                      
-						 <p>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <strong>
-                                  Adult Type 1.5 (Adult diabetes): 54
-                              </strong>
-                          </span>
-                          <br>
-                          <span style="font-size: small;" data-mce-style="font-size: small;">
-                              <em>
-                                  This value may require adjusting for some Type 1.5 individuals.
-                              </em>
-                          </span>
-                      </p>                      
-                      
-                      <p>
-                          <strong>
-                              <span style="font-size: small;" data-mce-style="font-size: small;">
-                                  Juvenile Type 1 (Juvenile diabetes): 54 or 72
-                              </span>
-                          </strong>
-                          <br>
-                          <em>
-                              <span style="font-size: small;" data-mce-style="font-size: small;">
-                                  This value may require adjusting for some Type 1 individuals.
-                              </span>
-                          </em>
-                      </p>
-                  </div>
-              </div>
-              </div>
-              
-              
+              </p>              
           </div>
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" class="numeric-text" id="textinput1" placeholder="" value="" type="tel">
+              <input name="" class="numeric-text" id="textinput1" placeholder="Input Value" value="" type="text">
           </div>
-          <a data-role="button" class="input-needs-validation" data-transition="slide" data-theme="d" href="#page6"  data-icon="arrow-r" data-iconpos="right">
+          <a data-role="button" class="input-needs-validation large" id="isf_button" data-transition="slide" data-theme="d" href="#page6"  data-icon="arrow-r" data-iconpos="right">
               Continue
+          </a>
+          
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
+              Learn More
           </a>
       </div>
       <script>
 
       </script>
   </div>
-  <div data-role="page" data-control-title="Before Meal Blood Sugar (3/6)"
-  id="page6">
+  <div data-role="page" data-control-title="Before Meal Blood Sugar (3/6)" id="page6">
       <div data-theme="b" data-role="header" data-position="fixed">
           <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right">
           </a>
           <a data-role="button" data-direction="reverse" data-transition="slide" href="#page5" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
           </a>
           <h3>
-              Before Meal Blood Sugar
+              Pre Prandial/Before Meal Blood Sugar
           </h3>
       </div>
       <div data-role="content">
           <div data-controltype="textblock">
               <h2 style="text-align: center;" data-mce-style="text-align: center;">
-                  Before Meal Blood Sugar
+                  Pre Prandial/Before Meal Blood Sugar
               </h2>
           </div>
           <div data-controltype="textblock">
               <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
                   <span>
-                      Before meal blood sugar measurement should be taken within 1/2 hour of
+                      Pre prandial/Before meal blood sugar measurement should be taken within 1/2 hour of
                       your meal.
                   </span>
               </p>
           </div>
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" class="numeric-text" id="textinput2" placeholder="" value="" type="tel">
+              <input name="" class="numeric-text" id="textinput2" placeholder="Input Value" value="" type="text">
           </div>
-          <a data-role="button" class="input-needs-validation" id="before_meal_blood_suger_button" data-transition="slide" data-theme="d" href="#page7"
-          data-icon="arrow-r" data-iconpos="right">
+          <a data-role="button" class="input-needs-validation large" id="before_meal_blood_suger_button" data-transition="slide" data-theme="d" href="#page7" data-icon="arrow-r" data-iconpos="right">
               Continue
+          </a>
+          
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
+              Learn More
           </a>
       </div>
   </div>
-  <div data-role="page" data-control-title="After meal blood sugar (4/6)"
-  id="page7">
+  <div data-role="page" data-control-title="After meal blood sugar (4/6)" id="page7">
       <div data-theme="b" data-role="header" data-position="fixed">
-          <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext"
-          class="ui-btn-right">
-          </a>
-          <a data-role="button" data-direction="reverse" data-transition="slide"
-          href="#page6" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
-          </a>
+          <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
+          <a data-role="button" data-direction="reverse" data-transition="slide" href="#page6" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
           <h3>
-              After meal blood sugar
+              Post Prandial/After Meal Blood Sugar
           </h3>
       </div>
       <div data-role="content">
           <div data-controltype="textblock">
               <h2 style="text-align: center;" data-mce-style="text-align: center;">
-                  After meal blood sugar
+                  Post Prandial/After Meal Blood Sugar
               </h2>
           </div>
           <div data-controltype="textblock">
               <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
-                  After meal blood sugar measurement should be taken within 1.5 - 2 hours from the first bite of your meal.
+                  Post prandial/After meal blood sugar measurement should be taken within 1.5 - 2 hours from the first bite of your meal.
               </p>
           </div>
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" class="numeric-text" id="textinput3" placeholder="" value="" type="tel">
+              <input name="" class="numeric-text" id="textinput3" placeholder="Input Value" value="" type="text">
           </div>
-          <a data-role="button" class="input-needs-validation" id="after_meal_blood_suger_button" data-transition="slide" data-theme="d" href="#page8" data-icon="arrow-r" data-iconpos="right">
+          <a data-role="button" class="input-needs-validation large" id="after_meal_blood_suger_button" data-transition="slide" data-theme="d" href="#page8" data-icon="arrow-r" data-iconpos="right">
               Continue
+          </a>
+          
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
+              Learn More
           </a>
       </div>
   </div>
@@ -412,10 +262,14 @@
               </p>
           </div>
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" class="numeric-text" id="textinput4" placeholder="" value="" type="tel">
+              <input name="" class="numeric-text" id="textinput4" placeholder="Input Value" value="" type="text">
           </div>
-          <a data-role="button" class="input-needs-validation" data-transition="slide" data-theme="d" href="#page9" data-icon="arrow-r" data-iconpos="right">
+          <a data-role="button" class="input-needs-validation large" data-transition="slide" data-theme="d" href="#page9" data-icon="arrow-r" data-iconpos="right">
               Continue
+          </a>
+          
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
+              Learn More
           </a>
       </div>
   </div>
@@ -443,80 +297,17 @@
               </p>
           </div>
           
-          <div data-role="collapsible-set" data-theme="b" class="accordian">
-          <div data-role="collapsible">
-                  <h3>
-                      Total Grams of Carbohydrates
-                  </h3>
-                  <div data-controltype="textblock">
-                     
-                      <p>
-                          <em>
-                              <strong>
-                                  How to Read Food Labels:
-                              </strong>
-                          </em>
-                      </p>
-                  
-                  <table width="100%" style="font-size: small;">
-                      	<tr>
-                      		<td width="67%">Carbohydrates</td>
-                      		<td style="text-align:center;">=</td>
-                      		<td width="35%" style="text-align:right;">18 grams</td>
-                      	</tr>
-                      	<tr>
-                      		<td width="67%">Fibre</td>
-                      		<td style="text-align:center;">=</td>
-                      		<td width="35%" style="text-align:right;">2 grams</td>
-                      	</tr>
-                      	<tr>
-                      		<td width="67%">Sugar</td>
-                      		<td style="text-align:center;">=</td>
-                      		<td width="35%" style="text-align:right;">2 grams</td>
-                      	</tr>
-                      	<tr>
-                      		<td width="65%">Starch <i>(not always listed)</i></td>
-                      		<td style="text-align:center;">=</td>
-                      		<td width="35%" style="text-align:right;">14 grams</td>
-                      	</tr>
-                      </table>
 
-                     <p>
-                          <em>
-                              <span>
-                                  Therefore:
-                              </span>
-                          </em>
-                      </p>
-                     
-                       <table width="100%" style="font-size: small;">
-                      	<tr>
-                      		<td width="73%">Carbohydrates</td>
-                      		<td style="text-align:right;">18 grams</td>
-                      	</tr>
-                      	<tr>
-                      		<td width="73%">Fibre</td>
-                      		<td style="text-align:right;">-&nbsp;2 grams</td>
-                      	</tr>
-                      	<tr>
-                      		<td style="font-weight:bold;">Total grams of Carbohydrates</td>
-                      		<td style="border-top:1px solid #ccc;text-align:right;font-weight:bold;">16 grams</td>
-                      	</tr>
-                      </table>
-                      
-                      <p style="font-size: small;">Always subtract Fibre from Carbohydrates</p>
-                  
-                      
-                  </div>
-              </div>
-          </div>
-          
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" class="numeric-text" id="textinput5" placeholder="" value="" type="tel">
+              <input name="" class="numeric-text" id="textinput5" placeholder="Input Value" value="" type="text">
           </div>
-          <a data-role="button" class="input-needs-validation" id="calc_levels" data-theme="d" href="#page10" data-icon="arrow-r"
+          <a data-role="button" class="input-needs-validation large Glowing" id="calc_levels" data-theme="d" href="#page10" data-icon="arrow-r"
           data-iconpos="right">
               Calculate
+          </a>
+          
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
+              Learn More
           </a>
       </div>
   </div>
@@ -544,7 +335,7 @@
               </p>
           </div>
           <p style="text-align:center;color:#ffffff;">1 unit of Rapid (mealtime) Insulin for every <span id="calculation_result_text2">##</span> grams of Carbohydrates</p>
-          <a data-role="button" href="#page11" data-icon="info" data-iconpos="left">
+          <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
               Learn More
           </a>
       </div>
@@ -1349,6 +1140,7 @@
                           </span>
                       </p>
                       
+<!--
                       <p>
                           <span style="font-size: small;" data-mce-style="font-size: small;">
                               <strong>
@@ -1362,6 +1154,7 @@
                               </em>
                           </span>
                       </p>
+-->
                       
                       <p>
                           <span style="font-size: small;" data-mce-style="font-size: small;">
@@ -1401,6 +1194,7 @@
                       </p>
                       
                       
+<!--
 						 <p>
                           <span style="font-size: small;" data-mce-style="font-size: small;">
                               <strong>
@@ -1414,6 +1208,7 @@
                               </em>
                           </span>
                       </p>                      
+-->
                       
                       <p>
                           <strong>
