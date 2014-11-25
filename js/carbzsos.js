@@ -19,13 +19,7 @@ $(function(){
 		var closest_input_val = $(this).parent().find('input')
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
-			//alert('Please choose a unit of measurement');
-            navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
+            navigator.notification.alert('Please choose a unit of measurement', alertDismissed, 'Alert', 'Ok');
 			return false;
 		}
 
@@ -45,13 +39,13 @@ $(function(){
         
 		//not empty and greater than 0
 		if(closest_input_val.length == 0 || closest_input_val <= 0){
-			alert('This value must be a positive number and cannot be empty');
+            navigator.notification.alert('This value must be a positive number and cannot be empty', alertDismissed, 'Alert', 'Ok');
 			return false;
 		}
         
 		//is numeric
 		else if(! $.isNumeric(closest_input_val)){
-			alert('This value must be a number');
+            navigator.notification.alert('This value must be a number', alertDismissed, 'Alert', 'Ok');
 			return false;
 		}
         
@@ -60,12 +54,12 @@ $(function(){
 			var blood_val = $('#textinput2').val();
 			if(units == 'mmol'){
 		        if(blood_val < 4){
-		        	alert('Your blood sugar is low! Please treat the low blood sugar.');
+                    navigator.notification.alert('Your blood sugar is low! Please treat the low blood sugar.', alertDismissed, 'Alert', 'Ok');
 		        	return false;
 		        	
 		        }
 		      	else if(blood_val > 25){
-		      		alert('Your blood sugar is high! Please seek medical attention!');
+                    navigator.notification.alert('Your blood sugar is high! Please seek medical attention!', alertDismissed, 'Alert', 'Ok');
 		      		//return false;
 		      		
 		      	}
@@ -74,12 +68,12 @@ $(function(){
 	      	else{
 	      		//blood_val = blood_val / 18;
 	      		if(blood_val < 72){
-		        	alert('Your blood sugar is low! Please treat the low blood sugar.');
+                    navigator.notification.alert('Your blood sugar is low! Please treat the low blood sugar.', alertDismissed, 'Alert', 'Ok');
 		        	return false;
 		        	
 		        }
 		      	else if(blood_val > 450){
-		      		alert('Your blood sugar is high! Please seek medical attention!');
+                    navigator.notification.alert('Your blood sugar is high! Please seek medical attention!', alertDismissed, 'Alert', 'Ok');
 		      		//return false;
 		      		
 		      	}
@@ -89,22 +83,22 @@ $(function(){
 			var blood_val = $('#textinput3').val();
 			if(units == 'mmol'){
 		        if(blood_val < 5){
-		        	alert('Your blood sugar is low! Please treat the low blood sugar.');
+                    navigator.notification.alert('Your blood sugar is low! Please treat the low blood sugar.', alertDismissed, 'Alert', 'Ok');
 		        	return false;
 		        }
 		      	else if(blood_val > 25){
-		      		alert('Your blood sugar is high! Please seek medical attention!');
+                    navigator.notification.alert('Your blood sugar is high! Please seek medical attention!', alertDismissed, 'Alert', 'Ok');
 		      		//return false;
 		      	}
 		      }
 		      else{
 		      	//blood_val = blood_val / 18;
 				if(blood_val < 90){
-		        	alert('Your blood sugar is low! Please treat the low blood sugar.');
+                    navigator.notification.alert('Your blood sugar is low! Please treat the low blood sugar.', alertDismissed, 'Alert', 'Ok');
 		        	return false;
 		        }
 		      	else if(blood_val > 450){
-		      		alert('Your blood sugar is high! Please seek medical attention!');
+                    navigator.notification.alert('Your blood sugar is high! Please seek medical attention!', alertDismissed, 'Alert', 'Ok');
 		      		//return false;
 		      	}
 		      }
@@ -257,11 +251,11 @@ function calculate_mg(isfcf, beforemeal, aftermeal, insulin, carbs) {
 		var blood_val = $('#textinput2').val();
 
         if(blood_val < 4){
-        	alert('Your blood sugar is too low');
+            navigator.notification.alert('Your blood sugar is too low', alertDismissed, 'Alert', 'Ok');
         	return false;
         }
       	else if(blood_val > 25){
-      		alert('Your blood sugar is high! Please seek medical attention!');
+            navigator.notification.alert('Your blood sugar is high! Please seek medical attention!', alertDismissed, 'Alert', 'Ok');
       		return false;
       	}
 
@@ -274,11 +268,11 @@ function calculate_mg(isfcf, beforemeal, aftermeal, insulin, carbs) {
 		var blood_val = $('#textinput3').val();
 
         if(blood_val < 5){
-        	alert('Your blood sugar is too low');
+        	navigator.notification.alert('Your blood sugar is too low', alertDismissed, 'Alert', 'Ok');
         	return false;
         }
       	else if(blood_val > 25){
-      		alert('Your blood sugar is high! Please seek medical attention!');
+      		navigator.notification.alert('Your blood sugar is high! Please seek medical attention!', alertDismissed, 'Alert', 'Ok');
       		return false;
       	}
 
