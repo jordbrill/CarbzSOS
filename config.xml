@@ -35,7 +35,7 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#1f9bc9" />
     
-    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />    
+    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />    
     <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />    
     <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
     
