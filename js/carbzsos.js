@@ -1,3 +1,29 @@
+// Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Empty
+    }
+
+    // alert dialog dismissed
+        function alertDismissed() {
+            // do something
+        }
+
+    // Show a custom alertDismissed
+    //
+    function showAlert() {
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+    }
+
 $(function(){
 	//bind events
 	$('.input-needs-validation').on( "click", input_validation );
@@ -14,7 +40,7 @@ $(function(){
 		var closest_input_val = $(this).parent().find('input')
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
-			navigator.notification.confirm('Please choose a unit of measurement', onConfirm , 'Alert', 'Ok');
+			showAlert();
 			return false;
 		}
 
