@@ -14,7 +14,8 @@ $(function(){
 		var closest_input_val = $(this).parent().find('input')
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
-			alert('Please choose a unit of measurement');
+			//alert('Please choose a unit of measurement');
+            navigator.notification.alert("alertMsg", "alertName", "confirmButtonName");
 			return false;
 		}
 
