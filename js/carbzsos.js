@@ -1,29 +1,3 @@
-// Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // Empty
-    }
-
-    // alert dialog dismissed
-        function alertDismissed() {
-            // do something
-        }
-
-    // Show a custom alertDismissed
-    //
-    function showAlert() {
-        navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-    }
-
 $(function(){
 	//bind events
 	$('.input-needs-validation').on( "click", input_validation );
@@ -40,7 +14,13 @@ $(function(){
 		var closest_input_val = $(this).parent().find('input')
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
-			showAlert();
+			//alert('Please choose a unit of measurement');
+            navigator.notification.alert(
+            'Please choose a unit of measurement',  // message
+            alertDismissed,         // callback
+            'Alert',            // title
+            'OK'                  // buttonName
+        );
 			return false;
 		}
 
