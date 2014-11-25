@@ -1,3 +1,8 @@
+function alertDismissed() {
+    // do something
+}
+
+
 $(function(){
 	//bind events
 	$('.input-needs-validation').on( "click", input_validation );
@@ -16,10 +21,10 @@ $(function(){
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
 			//alert('Please choose a unit of measurement');
             navigator.notification.alert(
-            'Please choose a unit of measurement',  // message
+            'You are the winner!',  // message
             alertDismissed,         // callback
-            'Alert',            // title
-            'OK'                  // buttonName
+            'Game Over',            // title
+            'Done'                  // buttonName
         );
 			return false;
 		}
