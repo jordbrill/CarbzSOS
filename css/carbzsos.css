@@ -169,3 +169,15 @@ a.Glowing {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
 }
+
+
+/*UI Hacks*/
+/*
+.ui-header .ui-title{
+    min-height: 1.4em;
+    font-weight: 600;
+}
+
+.ui-header .ui-btn-inner{
+    padding: .85em 11px .8em;
+}*/
