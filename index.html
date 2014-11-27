@@ -3,16 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>CarbzSOS</title>
-        <meta name="viewport" content="width=device-width, user-scalable = no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
         <link href="css/jqm-neue.css" rel="stylesheet">
         <link href="css/carbzsos.css" rel="stylesheet">
         <script src="phonegap.js"></script>
         <script src="childbrowser.js"></script>
         <script src="js/jquery-1.9.1.js"></script>
+         
+        <script>
+            $(document).bind("mobileinit", function(){
+                $.mobile.defaultPageTransition = 'none';
+            });     
+        </script>
+        
         <script src="js/jquery.mobile-1.3.1.js"></script>
         <script src="js/carbzsos.js"></script>
-
-
     </head>
 
     <body>
@@ -87,18 +92,16 @@
         
         <!-- Measurement Selection Page -->
         <div data-role="page" data-control-title="Select Unit of Measurement (1/6)" id="page4">
+            
             <div data-theme="b" data-role="header">
-                <a data-role="button" href="#page3" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>
-                <h3>Unit of Measurement</h3>
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
+                <h3>Unit of Measurement</h3>
             </div>
+            
             <div data-role="content">
-                <div data-controltype="textblock">
-                    <h2 style="text-align: center;">Select Unit of Measurement:</h2>
-                </div>
-                <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff">Select the method you measure in.</p>
-                </div>
+                <h2 style="text-align: center;">Select Unit of Measurement:</h2>
+                <p style="text-align: center;color:#ffffff">Select the method you measure in.</p>
+                
                 <div data-role="fieldcontain" data-controltype="radiobuttons">
                     <fieldset data-role="controlgroup" data-type="vertical">
                         <input id="radio1" name="" value="mmol/L" type="radio">
@@ -107,8 +110,9 @@
                         <label for="radio2">mg/dL</label>
                     </fieldset>
                 </div>
-                    <a data-role="button" class="large" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right">Continue</a>
-                    <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
+                
+                <a data-role="button" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right" class="large">Continue</a>
+                <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
             </div>
         </div>
         
@@ -116,36 +120,28 @@
         
         <!-- ISF/CF Measurement page -->
         <div data-role="page" data-control-title="Your ISF/CF (2/6)" id="page5">
+            
             <div data-theme="b" data-role="header">
                 <a data-role="button" data-direction="reverse" data-transition="slide" href="#page4" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
                 <h3>Your ISF/CF</h3>
-                <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
+                <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>                
             </div>
+            
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;">
-                      Your ISF/CF
-                  </h2>
-                </div>
-                <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff;">
-                        Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin will lower your blood sugar.
-                    </p>
+                    <h2 style="text-align: center;">Your ISF/CF</h2>
+                    <p style="text-align: center;color:#ffffff;">Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin will lower your blood sugar.</p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="textinput">
-                    <input name="" class="numeric-text" id="textinput1" placeholder="Input Value" value="" type="text">
+                    <input name="textinput1" class="numeric-text" id="textinput1" placeholder="Input Value" type="text">
                 </div>
-                <a data-role="button" class="input-needs-validation large" id="isf_button" data-transition="slide" data-theme="d" href="#page6" data-icon="arrow-r" data-iconpos="right">
-                  Continue
-              </a>
-
-                <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
-                  Learn More
-              </a>
+                <a data-role="button" class="input-needs-validation large" id="isf_button" data-transition="slide" data-theme="d" href="#page6" data-icon="arrow-r" data-iconpos="right">Continue</a>
+                <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
             </div>
-            <script>
-            </script>
+            
         </div>
+        
+        
         <div data-role="page" data-control-title="Before Meal Blood Sugar (3/6)" id="page6">
             <div data-theme="b" data-role="header">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right">
@@ -309,7 +305,7 @@
             </div>
         </div>
         <div data-role="page" data-control-title="Terms" id="terms">
-            <div data-theme="b" data-role="header" data-position="fixed">
+            <div data-theme="b" data-role="header">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>
                 <h3>
                   Terms &amp; Conditions
@@ -930,7 +926,7 @@
         
         <!-- Help Page -->
         <div data-role="page" data-control-title="Help" id="page11">
-            <div data-theme="b" data-role="header" data-position="fixed">
+            <div data-theme="b" data-role="header">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>
                 <h3>Help</h3>
             </div>

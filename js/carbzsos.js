@@ -14,17 +14,17 @@ $(function(){
 
 	function unit_radio_check(event){
 		event.stopImmediatePropagation();
-    	//event.preventDefault();
+    	event.preventDefault();
 
 		var closest_input_val = $(this).parent().find('input')
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
             navigator.notification.alert('Please choose a unit of measurement', alertDismissed, 'Alert', 'Ok');
-			//return false;
+			return false;
 		}
 
 		$.mobile.changePage($(this).attr('href'), { transition: 'slide', reverse: false });
-		//var pageID = $(this).attr('href');
+		var pageID = $(this).attr('href');
 	}
     
 	function input_validation(event){
