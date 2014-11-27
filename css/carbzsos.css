@@ -4,7 +4,11 @@ body{
             background-color: #1f9bc9;
             margin:0 !important;
         }
-        
+
+#container{
+    background-color: #1f9bc9;
+}
+
     h1,h2,h3,h4,h5{
             font-weight:100 !important;
             color:#ffffff !important;
