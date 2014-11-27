@@ -4,14 +4,12 @@
         <meta charset="utf-8">
         <title>CarbzSOS</title>
         <meta name="viewport" content="width=device-width, user-scalable = no" />
-        <link href="css/codiqa.ext.min.css" rel="stylesheet">
         <link href="css/jqm-neue.css" rel="stylesheet">
         <link href="css/carbzsos.css" rel="stylesheet">
         <script src="phonegap.js"></script>
         <script src="childbrowser.js"></script>
         <script src="js/jquery-1.9.1.js"></script>
         <script src="js/jquery.mobile-1.3.1.js"></script>
-        <script src="js/codiqa.ext.min.js"></script>
         <script src="js/carbzsos.js"></script>
 
         <script type="text/javascript">
@@ -70,21 +68,21 @@
                     <img style="width: 80%; height: %" src="img/carbzsos-logo.png">
                 </div>
                 <div data-controltype="textblock">
-                    <h2 data-mce-style="text-align: center;" style="text-align: center;">
-                      <span style="color: #ffffff" data-mce-style="color: #ffffff;">
+                    <h2 style="text-align: center;">
+                      <span style="color: #ffffff">
                           Are you ready to take control of your diabetes and your life?
                       </span>
                   </h2>
 
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;" data-mce-style="text-align: center;">
+                    <p style="text-align: center;">
                         <span style="font-size: small; color: #ffffff;">
                           By using this app you are agreeing to the
                       </span>
                         <br>
                         <span style="font-size: small; color: #ffffff;">
-                          <a href="#terms" data-mce-href="#terms" span style="color: #fff; text-decoration:none;">
+                          <a href="#terms" style="color: #fff; text-decoration:none;">
                             Terms and Conditions
                           </a>
                           <br /><br />
@@ -97,48 +95,35 @@
               </a>
             </div>
         </div>
+        
+        <!-- Measurement Selection Page -->
         <div data-role="page" data-control-title="Select Unit of Measurement (1/6)" id="page4">
             <div data-theme="b" data-role="header">
                 <a data-role="button" href="#page3" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
-                <h3>
-                  Unit of Measurement
-              </h3>
+                <h3>Unit of Measurement</h3>
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;">
-                      Select Unit of Measurement:
-                  </h2>
+                    <h2 style="text-align: center;">Select Unit of Measurement:</h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff">
-                        <span>
-                        Select the method you measure in.
-                      </span>
-                    </p>
+                    <p style="text-align: center;color:#ffffff"><span>Select the method you measure in.</span></p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="radiobuttons">
                     <fieldset data-role="controlgroup" data-type="vertical">
                         <input id="radio1" name="" value="mmol/L" type="radio">
-                        <label for="radio1">
-                            mmol/L
-                        </label>
+                        <label for="radio1">mmol/L</label>
                         <input id="radio2" name="" value="mg/dL" type="radio">
-                        <label for="radio2">
-                            mg/dL
-                        </label>
+                        <label for="radio2">mg/dL</label>
                     </fieldset>
                 </div>
-                <a data-role="button" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right" class="large">
-                  Continue
-              </a>
-
-                <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">
-                  Learn More
-              </a>
+                <a data-role="button" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right" class="large">Continue</a>
+                <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
             </div>
         </div>
+        
+        <!-- ISF/CF Measurement page -->
         <div data-role="page" data-control-title="Your ISF/CF (2/6)" id="page5">
             <div data-theme="b" data-role="header">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
@@ -150,12 +135,12 @@
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;" data-mce-style="text-align: center;">
+                    <h2 style="text-align: center;">
                       Your ISF/CF
                   </h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
+                    <p style="text-align: center;color:#ffffff;">
                         Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin will lower your blood sugar.
                     </p>
                 </div>
@@ -185,12 +170,12 @@
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;" data-mce-style="text-align: center;">
+                    <h2 style="text-align: center;">
                       Pre Prandial/Before Meal Blood Sugar
                   </h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
+                    <p style="text-align: center;color:#ffffff;">
                         <span>
                           Pre prandial/Before meal blood sugar measurement should be taken within 1/2 hour of
                           your meal.
@@ -219,12 +204,12 @@
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;" data-mce-style="text-align: center;">
+                    <h2 style="text-align: center;">
                       Post Prandial/After Meal Blood Sugar
                   </h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
+                    <p style="text-align: center;color:#ffffff;">
                         Post prandial/After meal blood sugar measurement should be taken within 1.5 - 2 hours from the first bite of your meal.
                     </p>
                 </div>
@@ -252,12 +237,12 @@
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;" data-mce-style="text-align: center;">
+                    <h2 style="text-align: center;">
                       Units of Rapid (mealtime) Insulin
                   </h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
+                    <p style="text-align: center;color:#ffffff;">
                         Number of units of Rapid (mealtime) Insulin given for your meal.
                     </p>
                 </div>
@@ -285,12 +270,12 @@
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;" data-mce-style="text-align: center;">
+                    <h2 style="text-align: center;">
                       Total Grams of Carbohydrates
                   </h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff;" data-mce-style="text-align: center;">
+                    <p style="text-align: center;color:#ffffff;">
                         Total grams of carbohydrates from all sources in your meal.
                     </p>
                 </div>
@@ -320,12 +305,12 @@
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
-                    <h2 style="text-align: center;" data-mce-style="text-align: center;">
+                    <h2 style="text-align: center;">
                       Insulin:Carbohydrate Ratio
                   </h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p id="calculation_result_text" style="text-align: center;" data-mce-style="text-align: center;">
+                    <p id="calculation_result_text" style="text-align: center;">
 
                     </p>
                 </div>
@@ -359,14 +344,14 @@
                         </span>
                     </p>
                     <p class="p1">
-                        <span class="s1" style="font-size: small;" data-mce-style="font-size: small;">
+                        <span class="s1" style="font-size: small;">
                           <b>
                               MOBILE APPLICATION TERMS OF SERVICE and PRIVACY POLICY
                           </b>
                       </span>
                     </p>
                     <p class="p1">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           <b>
                               <i>
                                   By installing or using this mobile application on your device, you agree
@@ -383,7 +368,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           I.
                           <b>
                               Terms of Service
@@ -391,7 +376,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           The terms of this agreement (referred to herein as "Terms of Service"
                           or "Agreement") govern the relationship between you and Caren's Diabetes
                           LifeSkills, Inc., located in British Columbia, Canada ("DLS") regarding
@@ -400,7 +385,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           Use of the Mobile App is also governed by the DLS Privacy Policy below.
                           We do not collect, store or use any personally identifiable information
                           through this Mobile App. Nonetheless, we encourage you to read the DLS
@@ -408,7 +393,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           By creating an account, accessing, downloading or using the Mobile App
                           you accept and agree to be bound by these Terms of Service and consent
                           to the collection, use and storage of your information as outlined in the
@@ -424,7 +409,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           DLS reserves the right, at its sole discretion, to modify or replace all
                           or any part of the Terms of Service (including, without limitation, pricing
                           and payment terms set forth in "Fees and Payment") at any time. You can
@@ -439,7 +424,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           II.
                           <b>
                               Grant of a Limited License to Use the Service
@@ -447,7 +432,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           Subject to your agreement and continuing compliance with these Terms of
                           Service, DLS grants you a non-exclusive, non-transferable, revocable limited
                           license subject to the limitations in Section II.C. to access, download
@@ -463,7 +448,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           <b>
                           </b>
                           A.
@@ -473,7 +458,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           You may be required to have a valid account with the applications provider
                           for your mobile device. You warrant that you are not prohibited by the
                           laws of any jurisdiction from downloading and using the Mobile App in the
@@ -488,7 +473,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           B.
                           <b>
                               Use of the Mobile App
@@ -496,43 +481,43 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           The following restrictions apply to the use of the Mobile App:
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           1. You shall not use the Mobile App if you are located in the USA and its territories, or in a country where
                           it's use is not permitted by the laws of the country that regulates the web site from which you have accessed the Mobile App.
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           2. You shall use the Mobile App only for your own personal use and not
                           for any commercial or other purposes;
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           3. You shall not use the Mobile App to engage in any illegal conduct;
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           4. You shall not sublicense, rent, lease, sell, trade, gift, bequeath
                           or otherwise transfer your account or the Mobile App to anyone without
                           written permission from DLS;
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           5. You shall not access or use a Mobile App that has been sublicensed,
                           rented, leased, sold, traded, gifted, bequeathed, or otherwise transferred
                           from the original account creator without DLS permission; and
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           6. You shall comply with the terms of service/use of the applications
                           provider for your mobile device as well as these Terms of Service.
                       </span>
@@ -541,7 +526,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">                     
+                        <span style="font-size: small;">                     
                           C.
                           <b>
                               License Limitations
@@ -549,7 +534,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           Any use of the Mobile App in violation of the use restrictions in B. above
@@ -562,7 +547,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           • Use the Mobile App, intentionally or unintentionally, in connection
@@ -571,7 +556,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           • Modify or cause to be modified any files that are a part of the Mobile
@@ -579,14 +564,14 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           • Use the Mobile App or any part thereof for any commercial purpose;
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           • Except where permitted by law or relevant open source licenses, reverse
@@ -598,7 +583,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           • Copy, modify or distribute, translate, or otherwise create derivative
@@ -608,7 +593,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
 
                           • Bypass any measures DLS may use to prevent or restrict access to the
@@ -619,7 +604,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           III.
                           <b>
                               Application and Registration Process
@@ -627,7 +612,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           The Mobile App is designed to assist you in monitoring and calculating
                           your Insulin:Carbohydrate ratio. You may use the Mobile App only after
@@ -639,7 +624,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           IV.
                           <b>
                               THE MOBILE APP DOES NOT PROVIDE MEDICAL ADVICE AND IS NOT A MEDICAL
@@ -648,7 +633,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           <b>
                               The Mobile App is provided for educational purposes only and is not intended
                               to diagnose, treat, mitigate, cure or prevent any disease or condition.
@@ -658,7 +643,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           DLS are not physicians and are not licensed to give medical advice. The
                           Mobile App is not a substitute for professional medical advice. The Mobile
@@ -672,7 +657,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           You are solely responsible for the information that you input into the
                           Mobile App and for any decisions or actions you take based on the output
@@ -682,7 +667,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           <b>
                               <i>
                                   <span class="Apple-tab-span">
@@ -696,7 +681,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           V.
                           <b>
                               Termination
@@ -704,7 +689,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           DLS may terminate your license to use or further access any updates to
                           the Mobile App, or any part thereof at any time if you fail to comply with
@@ -722,7 +707,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           VI.
                           <b>
                               Warranty Disclaimer
@@ -730,7 +715,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           THE MOBILE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" AND IS WITHOUT WARRANTY
                           OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
                           WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR
@@ -747,7 +732,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           Note, you may have legal rights in your country of residence which are
                           different, limit or prohibit these limitations from applying to you, and
                           where prohibited they will not apply to you.
@@ -757,7 +742,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           VII.
                           <b>
                               Indemnification
@@ -765,7 +750,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           You shall defend, indemnify, and hold harmless DLS, and its affiliates, employees, contractors, directors, suppliers
                           and representatives from all liabilities, losses, claims, and expenses,
@@ -781,7 +766,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           VIII.
                           <b>
                               Limitation of Liability
@@ -789,7 +774,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL DLS (NOR ITS
                           DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, CONTENT PROVIDERS) BE LIABLE UNDER
                           CONTRACT, TORT, STRICT LIABILITY, NEGLIGENCE OR ANY OTHER LEGAL OR EQUITABLE
@@ -810,7 +795,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           IX.
                           <b>
                               Dispute Resolution
@@ -818,7 +803,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           A printed version of the Terms of Service and of any notice given in electronic
                           form shall be admissible in judicial or administrative proceedings based
@@ -844,7 +829,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           X.
                           <b>
                               Privacy Policy
@@ -852,7 +837,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           By using the Mobile App you acknowledge that you accept the practices
                           and policies outlined in this Privacy Policy. If you have questions or
@@ -862,7 +847,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           DLS does not collect or retain
                           <b>
@@ -877,7 +862,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           Note, however, third party Internet sites and services through which you
                           accessed the Mobile App have separate privacy and data collection practices,
@@ -891,7 +876,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           XI.
                           <b>
                               MISCELLANEOUS
@@ -899,7 +884,7 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
 
                           The Terms of Service are the entire agreement between you and DLS with
                           respect to the Mobile App, and supersede all prior or contemporaneous communications
@@ -924,7 +909,7 @@
                         <br>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           XII.
                           <b>
                               CONTACT
@@ -932,13 +917,12 @@
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
-                          If you have any questions regarding the Mobile App, please contact DLS
-                          at <a href="mailto:info@carbzsos.com">info@carbzsos.com</a>.
+                        <span style="font-size: small;">
+                          If you have any questions regarding the Mobile App, please contact DLS at <a href="mailto:info@carbzsos.com">info@carbzsos.com</a>.
                       </span>
                     </p>
                     <p class="p3">
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           <b>
                               Effective Date:
                           </b>
@@ -946,7 +930,7 @@
                       </span>
                     </p>
                     <p>
-                        <span style="font-size: small;" data-mce-style="font-size: small;">
+                        <span style="font-size: small;">
                           <b>
                               <br>
                           </b>
@@ -982,7 +966,7 @@
                             </div>
                             <div class="ui-block-b">
                                 <div data-controltype="textblock">
-                                    <p style="text-align: center;" data-mce-style="text-align: center;">
+                                    <p style="text-align: center;">
                                         <strong>mg/dL</strong>
                                         <br>72 mg
                                     </p>
@@ -991,14 +975,14 @@
                         </div>
                         <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
                         <div data-controltype="textblock">
-                            <p style="text-align: center;" data-mce-style="text-align: center;">
+                            <p style="text-align: center;">
                                 <b>After meal blood sugar must be greater than or equal to:</b>
                             </p>
                         </div>
                         <div class="ui-grid-a">
                             <div class="ui-block-a">
                                 <div data-controltype="textblock">
-                                    <p style="text-align: center;" data-mce-style="text-align: center;">
+                                    <p style="text-align: center;">
                                         <strong>
                                           mmol/L
                                       </strong>
@@ -1008,7 +992,7 @@
                             </div>
                             <div class="ui-block-b">
                                 <div data-controltype="textblock">
-                                    <p style="text-align: center;" data-mce-style="text-align: center;">
+                                    <p style="text-align: center;">
                                         <strong>
                                           mg/dL
                                       </strong>
@@ -1097,27 +1081,27 @@
                               </span>
                             </p>
                             <p>
-                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                <span style="font-size: small;">
                                   <strong>
                                       Adult Type 2 (Adult diabetes): 2
                                   </strong>
                               </span>
                                 <br>
-                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                <span style="font-size: small;">
                                   <em>
                                       This value may require adjusting for some Type 2 individuals.
                                   </em>
                               </span>
                             </p>
                             <p>
-                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                <span style="font-size: small;">
                                   <strong>
                                       Adult Type 1 (Juvenile diabetes): 3 or 4
                                   </strong>
                               </span>
                                 <br>
                                 <em>
-                                  <span style="font-size: small;" data-mce-style="font-size: small;">
+                                  <span style="font-size: small;">
                                       This value may require adjusting for some Type 1 individuals.
                                   </span>
                               </em>
@@ -1126,20 +1110,20 @@
                         <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
                         <div data-controltype="textblock">
                             <p>
-                                <span style="font-size: large;" data-mce-style="font-size: large;">
+                                <span style="font-size: large;">
                                   <strong>
                                       mg/dL
                                   </strong>
                               </span>
                             </p>
                             <p>
-                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                <span style="font-size: small;">
                                   <strong>
                                       Adult Type 2 (Adult diabetes): 36
                                   </strong>
                               </span>
                                 <br>
-                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                <span style="font-size: small;">
                                   <em>
                                       This value may require adjusting for some Type 2 individuals.
                                   </em>
@@ -1147,13 +1131,13 @@
                             </p>
                             <p>
                                 <strong>
-                                  <span style="font-size: small;" data-mce-style="font-size: small;">
+                                  <span style="font-size: small;">
                                       Juvenile Type 1 (Juvenile diabetes): 54 or 72
                                   </span>
                               </strong>
                                 <br>
                                 <em>
-                                  <span style="font-size: small;" data-mce-style="font-size: small;">
+                                  <span style="font-size: small;">
                                       This value may require adjusting for some Type 1 individuals.
                                   </span>
                               </em>
