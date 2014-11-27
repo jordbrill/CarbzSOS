@@ -12,21 +12,10 @@
         <script src="js/jquery.mobile-1.3.1.js"></script>
         <script src="js/carbzsos.js"></script>
 
-        <script type="text/javascript">
-            $(document).one("mobileinit", function () {
 
-                // Setting #container div as a jqm pageContainer
-                $.mobile.pageContainer = $('#container');
-
-                // Setting default page transition to slide
-                $.mobile.defaultPageTransition = 'slide';
-
-            });
-        </script>
     </head>
 
     <body>
-        <div id="container" />
         <div data-role="page" data-control-title="Home" data-theme="d" id="page3">
             <div data-role="panel" id="panel4" data-position="left" data-display="push" data-theme="d">
                 <ul data-role="listview" data-divider-theme="d" data-inset="false">
@@ -100,15 +89,15 @@
         <div data-role="page" data-control-title="Select Unit of Measurement (1/6)" id="page4">
             <div data-theme="b" data-role="header">
                 <a data-role="button" href="#page3" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>
-                <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
                 <h3>Unit of Measurement</h3>
+                <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">
                     <h2 style="text-align: center;">Select Unit of Measurement:</h2>
                 </div>
                 <div data-controltype="textblock">
-                    <p style="text-align: center;color:#ffffff"><span>Select the method you measure in.</span></p>
+                    <p style="text-align: center;color:#ffffff">Select the method you measure in.</p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="radiobuttons">
                     <fieldset data-role="controlgroup" data-type="vertical">
@@ -118,20 +107,19 @@
                         <label for="radio2">mg/dL</label>
                     </fieldset>
                 </div>
-                <a data-role="button" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right" class="large">Continue</a>
-                <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
+                    <a data-role="button" class="large" id="units-button" data-transition="slide" data-theme="d" href="#page5" data-icon="arrow-r" data-iconpos="right">Continue</a>
+                    <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
             </div>
         </div>
+        
+        
         
         <!-- ISF/CF Measurement page -->
         <div data-role="page" data-control-title="Your ISF/CF (2/6)" id="page5">
             <div data-theme="b" data-role="header">
+                <a data-role="button" data-direction="reverse" data-transition="slide" href="#page4" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+                <h3>Your ISF/CF</h3>
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
-                <a data-role="button" data-direction="reverse" data-transition="slide" href="#page4" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
-                </a>
-                <h3>
-                  Your ISF/CF
-              </h3>
             </div>
             <div data-role="content">
                 <div data-controltype="textblock">

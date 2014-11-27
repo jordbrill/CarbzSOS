@@ -20,7 +20,7 @@ $(function(){
 
 		if(!($('#radio1').is(':checked') || $('#radio2').is(':checked'))){
             navigator.notification.alert('Please choose a unit of measurement', alertDismissed, 'Alert', 'Ok');
-			return false;
+			//return false;
 		}
 
 		$.mobile.changePage($(this).attr('href'), { transition: 'slide', reverse: false });
