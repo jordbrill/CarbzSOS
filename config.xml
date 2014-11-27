@@ -26,7 +26,8 @@
     <preference name="StatusBarBackgroundColor" value="#1f9bc9" />
     <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />    
     <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
-        
+    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+    
     <icon gap:platform="ios" src="res/icons/ios/Icon.png" width="57" height="57" />
     <icon gap:platform="ios" src="res/icons/ios/Icon@2x.png" width="114" height="114" />
     <icon gap:platform="ios" src="res/icons/ios/Icon-60.png" width="60" height="60" />
