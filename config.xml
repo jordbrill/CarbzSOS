@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-    <widget xmlns   = "http://www.w3.org/ns/widgets"
+<widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.carbzsos.application"
         version     = "1.0.5" >
-        
     <name>CarbzSOS</name>
-
-    <description>
-    	The app is an educational tool to calculate insulin:carbohydrate ratio.
-    </description>
-
-    <author href="http://carbzsos.com" email="info@carbzsos.com">
-        CarbzSOS
-    </author>
+    <description>The app is an educational tool to calculate insulin:carbohydrate ratio.</description>
+    <author href="http://carbzsos.com" email="info@carbzsos.com">CarbzSOS</author>
         
     <preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -61,8 +53,6 @@
     <gap:splash gap:platform="ios" src="res/screens/ios/Default-736h.png" width="1242" height="2208" />
     <gap:splash gap:platform="ios" src="res/screens/ios/Default-Landscape-736h.png" width="2208" height="1242" />
         
-        <preference name="SplashScreenDelay" value="15000" />
-
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>100</string>
     </gap:config-file>
