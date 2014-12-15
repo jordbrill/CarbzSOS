@@ -28,7 +28,8 @@
     <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
     <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
     
-    <icon gap:platform="ios" src="res/icons/ios/Icon.png" width="57" height="57" />
+    <!-- iOS Icons-->
+    <icon gap:platform="ios" src="res/icons/ios/icon-57.png" width="57" height="57" />
     <icon gap:platform="ios" src="res/icons/ios/Icon@2x.png" width="114" height="114" />
     <icon gap:platform="ios" src="res/icons/ios/Icon-60.png" width="60" height="60" />
     <icon gap:platform="ios" src="res/icons/ios/Icon-60@2x.png" width="120" height="120" />
@@ -42,7 +43,8 @@
     <icon gap:platform="ios" src="res/icons/ios/Icon-40@2x.png" width="80" height="80" />
     <icon gap:platform="ios" src="res/icons/ios/Icon-small.png" width="29" height="29" />
     <icon gap:platform="ios" src="res/icons/ios/Icon-small@2x.png" width="58" height="58" />    
-        
+    
+    <!-- iOS Splash Screens-->    
     <gap:splash gap:platform="ios" src="res/screens/ios/Default~iphone.png" width="320" height="480" />
     <gap:splash gap:platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" height="960" />
     <gap:splash gap:platform="ios" src="res/screens/ios/Default-Portrait~ipad.png" width="768" height="1024" />
@@ -53,6 +55,28 @@
     <gap:splash gap:platform="ios" src="res/screens/ios/Default-667h.png" width="750" height="1334" />
     <gap:splash gap:platform="ios" src="res/screens/ios/Default-736h.png" width="1242" height="2208" />
     <gap:splash gap:platform="ios" src="res/screens/ios/Default-Landscape-736h.png" width="2208" height="1242" />
+       
+    <!-- Android Icons-->
+	<icon src="res/icons/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="res/icons/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="res/icons/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="res/icons/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<!--
+	<icon src="res/icons/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="res/icons/android/fr-xxhdpi.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+	-->
+	
+	<!-- Android Splash Screens-->
+	<gap:splash src="res/screens/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="res/screens/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="res/screens/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="res/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<!--
+	<gap:splash src="res/screens/android/fr-xhdpi.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+	<gap:splash src="res/screens/android/portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+	<gap:splash src="res/screens/android/landscape-xxhdpi.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
+	-->
+    
         
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>100</string>
