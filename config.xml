@@ -2,7 +2,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.carbzsos.application"
-        version     = "1.0.6" >
+        version     = "1.0.7" >
     <name>CarbzSOS</name>
     <description>The app is an educational tool to calculate insulin:carbohydrate ratio.</description>
     <author href="http://carbzsos.com" email="info@carbzsos.com">CarbzSOS</author>
