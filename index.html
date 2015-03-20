@@ -12,9 +12,10 @@
         <script src="js/jquery.mobile-1.3.1.js"></script>
         <script src="js/carbzsos.js"></script>
     </head>
-
     <body>
+        <!-- Start home screen -->
         <div data-role="page" data-control-title="Home" data-theme="d" id="page3">
+            <!-- Start side navigation panel -->
             <div data-role="panel" id="panel4" data-position="left" data-display="push" data-theme="d">
                 <ul data-role="listview" data-divider-theme="d" data-inset="false">
                     <li data-theme="c">
@@ -29,6 +30,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- End side navigation panel -->
             <div data-theme="b" data-role="header" data-position="fixed" class="no-background">
                 <span class="ui-title"></span>
                 <a id="panel-button" data-controltype="panelbutton" data-role="button" data-theme="d" href="#panel4" data-icon="bars" data-iconpos="left" class="ui-btn-left hide-styling">Menu</a>
@@ -67,8 +69,9 @@
               </a>
             </div>
         </div>
+        <!-- End home screen -->
         
-        <!-- Measurement Selection Page -->
+        <!-- Start Measurement Selection Page -->
         <div data-role="page" data-control-title="Select Unit of Measurement (1/6)" id="page4">
             
             <div data-theme="b" data-role="header" data-position="fixed">
@@ -93,12 +96,10 @@
                 <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
             </div>
         </div>
+        <!-- End Measurement Selection Page -->
         
-        
-        
-        <!-- ISF/CF Measurement page -->
+        <!-- Start ISF/CF Measurement page -->
         <div data-role="page" data-control-title="Your ISF/CF (2/6)" id="page5">
-            
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" data-direction="reverse" data-transition="slide" href="#page4" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
                 <h3>Your ISF/CF</h3>
@@ -111,15 +112,15 @@
                     <p style="text-align: center;color:#ffffff;">Your ISF or CF is the amount by which 1 unit of Rapid (mealtime) Insulin will lower your blood sugar.</p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="textinput">
-                    <input name="textinput1" class="numeric-text" id="textinput1" placeholder="Input Value" type="numberDecimal">
+                    <input name="textinput1" class="numeric-text" id="textinput1" placeholder="Input Value" type="text" pattern="[0-9]*">
                 </div>
                 <a data-role="button" class="input-needs-validation large" id="isf_button" data-transition="slide" data-theme="d" href="#page6" data-icon="arrow-r" data-iconpos="right">Continue</a>
                 <a data-role="button" data-theme="c" href="#page11" class="LearnMore" data-icon="info" data-iconpos="left">Learn More</a>
-            </div>
-            
+            </div>         
         </div>
+        <!-- End ISF/CF Measurement page -->
         
-        
+        <!-- Start Before Meal Measurement page -->
         <div data-role="page" data-control-title="Before Meal Blood Sugar (3/6)" id="page6">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right">
@@ -145,7 +146,7 @@
                     </p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="textinput">
-                    <input name="" class="numeric-text" id="textinput2" placeholder="Input Value" value="" type="numberDecimal">
+                    <input name="" class="numeric-text" id="textinput2" placeholder="Input Value" value="" type="text" pattern="[0-9]*">
                 </div>
                 <a data-role="button" class="input-needs-validation large" id="before_meal_blood_suger_button" data-transition="slide" data-theme="d" href="#page7" data-icon="arrow-r" data-iconpos="right">
                   Continue
@@ -156,6 +157,9 @@
               </a>
             </div>
         </div>
+        <!-- End Before Meal Measurement page -->
+        
+        <!-- Start After Meal Measurement page -->
         <div data-role="page" data-control-title="After meal blood sugar (4/6)" id="page7">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>
@@ -176,7 +180,7 @@
                     </p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="textinput">
-                    <input name="" class="numeric-text" id="textinput3" placeholder="Input Value" value="" type="numberDecimal">
+                    <input name="" class="numeric-text" id="textinput3" placeholder="Input Value" value="" type="text" pattern="[0-9]*">
                 </div>
                 <a data-role="button" class="input-needs-validation large" id="after_meal_blood_suger_button" data-transition="slide" data-theme="d" href="#page8" data-icon="arrow-r" data-iconpos="right">
                   Continue
@@ -187,6 +191,9 @@
               </a>
             </div>
         </div>
+        <!-- End After Meal Measurement page -->
+        
+        <!-- Start Mealtime Insulin Measurement page -->
         <div data-role="page" data-control-title="Units of Rapid (mealtime) Insulin (5/6)" id="page8">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-right">
@@ -209,7 +216,7 @@
                     </p>
                 </div>
                 <div data-role="fieldcontain" data-controltype="textinput">
-                    <input name="" class="numeric-text" id="textinput4" placeholder="Input Value" value="" type="numberDecimal">
+                    <input name="" class="numeric-text" id="textinput4" placeholder="Input Value" value="" type="text" pattern="[0-9]*">
                 </div>
                 <a data-role="button" class="input-needs-validation large" data-transition="slide" data-theme="d" href="#page9" data-icon="arrow-r" data-iconpos="right">
                   Continue
@@ -220,6 +227,9 @@
               </a>
             </div>
         </div>
+        <!-- End Mealtime Insulin Measurement page -->
+        
+        <!-- Start Carbohydrate Measurement page -->
         <div data-role="page" data-control-title="Total Grams of Carbohydrates (6/6)" id="page9">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" data-direction="reverse" data-transition="slide" href="#page8" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
@@ -244,7 +254,7 @@
 
 
                 <div data-role="fieldcontain" data-controltype="textinput">
-                    <input name="" class="numeric-text" id="textinput5" placeholder="Input Value" value="" type="numberDecimal">
+                    <input name="" class="numeric-text" id="textinput5" placeholder="Input Value" value="" type="text" pattern="[0-9]*">
                 </div>
                 <a data-role="button" class="input-needs-validation large Glowing" id="calc_levels" data-theme="d" href="#page10" data-icon="arrow-r" data-iconpos="right">
                   Calculate
@@ -255,6 +265,9 @@
               </a>
             </div>
         </div>
+        <!-- End Carbohydrate Measurement page -->
+        
+        <!-- Start Results page -->
         <div data-role="page" data-control-title="Results" id="page10">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" data-direction="reverse" data-transition="slide" href="#page9" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">
@@ -282,6 +295,9 @@
               </a>
             </div>
         </div>
+        <!-- End Results page -->
+        
+        <!-- Start Terms and Conditions page -->
         <div data-role="page" data-control-title="Terms" id="terms">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>
@@ -901,8 +917,9 @@
                 </div>
             </div>
         </div>
+        <!-- End Terms and Conditions page -->
         
-        <!-- Help Page -->
+        <!-- Start Help Page -->
         <div data-role="page" data-control-title="Help" id="page11">
             <div data-theme="b" data-role="header" data-position="fixed">
                 <a data-role="button" href="#page3" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>
@@ -1234,6 +1251,7 @@
                 <a data-role="button" data-theme="c" href="#terms">Review Terms &amp; Conditions</a>
             </div>
         </div>
+        <!-- End Help Page -->
 
     </body>
 </html>
